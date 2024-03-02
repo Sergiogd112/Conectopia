@@ -15,3 +15,5 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.0
 
 // Adds additional packages into conf/routes
 // play.sbt.routes.RoutesKeys.routesImport += "com.conectopia.binders._"
+// add hibernate to the dependencies
+libraryDependencies += "org.hibernate" % "hibernate-core" % "5.5.7.Final"
