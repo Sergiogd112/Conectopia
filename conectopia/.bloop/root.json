@@ -1,0 +1,1959 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "root",
+        "directory": "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia",
+        "workspaceDir": "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia",
+        "sources": [
+            "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\app",
+            "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\app-2.13",
+            "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\app-2",
+            "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\target\\scala-2.13\\src_managed\\main",
+            "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\target\\scala-2.13\\routes\\main",
+            "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\target\\scala-2.13\\twirl\\main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\twirl\\twirl-api_2.13\\2.0.3\\twirl-api_2.13-2.0.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-server_2.13\\3.0.1\\play-server_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-logback_2.13\\3.0.1\\play-logback_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-pekko-http-server_2.13\\3.0.1\\play-pekko-http-server_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-filters-helpers_2.13\\3.0.1\\play-filters-helpers_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-guice_2.13\\3.0.1\\play-guice_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\hibernate-core\\5.5.7.Final\\hibernate-core-5.5.7.Final.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.13\\2.2.0\\scala-xml_2.13-2.2.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play_2.13\\3.0.1\\play_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-classic\\1.4.14\\logback-classic-1.4.14.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-streams_2.13\\3.0.1\\play-streams_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-http-core_2.13\\1.0.0\\pekko-http-core_2.13-1.0.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\guice\\6.0.0\\guice-6.0.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\extensions\\guice-assistedinject\\6.0.0\\guice-assistedinject-6.0.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\logging\\jboss-logging\\3.4.2.Final\\jboss-logging-3.4.2.Final.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\persistence\\javax.persistence-api\\2.2\\javax.persistence-api-2.2.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\javassist\\javassist\\3.27.0-GA\\javassist-3.27.0-GA.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\bytebuddy\\byte-buddy\\1.11.12\\byte-buddy-1.11.12.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\antlr\\antlr\\2.7.7\\antlr-2.7.7.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\spec\\javax\\transaction\\jboss-transaction-api_1.2_spec\\1.1.1.Final\\jboss-transaction-api_1.2_spec-1.1.1.Final.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\jandex\\2.2.3.Final\\jandex-2.2.3.Final.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\classmate\\1.5.1\\classmate-1.5.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\activation\\javax.activation-api\\1.2.0\\javax.activation-api-1.2.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\common\\hibernate-commons-annotations\\5.1.2.Final\\hibernate-commons-annotations-5.1.2.Final.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\xml\\bind\\jaxb-api\\2.3.1\\jaxb-api-2.3.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\jaxb-runtime\\2.3.1\\jaxb-runtime-2.3.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-build-link\\3.0.1\\play-build-link-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-configuration_2.13\\3.0.1\\play-configuration_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\2.0.9\\slf4j-api-2.0.9.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jul-to-slf4j\\2.0.9\\jul-to-slf4j-2.0.9.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jcl-over-slf4j\\2.0.9\\jcl-over-slf4j-2.0.9.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor_2.13\\1.0.2\\pekko-actor_2.13-1.0.2.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor-typed_2.13\\1.0.2\\pekko-actor-typed_2.13-1.0.2.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-slf4j_2.13\\1.0.2\\pekko-slf4j_2.13-1.0.2.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-serialization-jackson_2.13\\1.0.2\\pekko-serialization-jackson_2.13-1.0.2.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.14.3\\jackson-core-2.14.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.14.3\\jackson-annotations-2.14.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.14.3\\jackson-datatype-jdk8-2.14.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.14.3\\jackson-datatype-jsr310-2.14.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.14.3\\jackson-databind-2.14.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-cbor\\2.14.3\\jackson-dataformat-cbor-2.14.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-parameter-names\\2.14.3\\jackson-module-parameter-names-2.14.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.14.3\\jackson-module-scala_2.13-2.14.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-api\\0.11.5\\jjwt-api-0.11.5.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-impl\\0.11.5\\jjwt-impl-0.11.5.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-jackson\\0.11.5\\jjwt-jackson-0.11.5.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-json_2.13\\3.0.1\\play-json_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\32.1.3-jre\\guava-32.1.3-jre.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\inject\\javax.inject\\1\\javax.inject-1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\ssl-config-core_2.13\\0.6.1\\ssl-config-core_2.13-0.6.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-core\\1.4.14\\logback-core-1.4.14.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.4\\reactive-streams-1.0.4.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-stream_2.13\\1.0.2\\pekko-stream_2.13-1.0.2.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-parsing_2.13\\1.0.0\\pekko-parsing_2.13-1.0.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\parboiled\\parboiled_2.13\\2.5.0\\parboiled_2.13-2.5.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\jakarta\\inject\\jakarta.inject-api\\2.0.1\\jakarta.inject-api-2.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\aopalliance\\aopalliance\\1.0\\aopalliance-1.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.21.1\\error_prone_annotations-2.21.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\txw2\\2.3.1\\txw2-2.3.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\istack\\istack-commons-runtime\\3.0.7\\istack-commons-runtime-3.0.7.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jvnet\\staxex\\stax-ex\\1.8\\stax-ex-1.8.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\xml\\fastinfoset\\FastInfoset\\1.2.15\\FastInfoset-1.2.15.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-exceptions\\3.0.1\\play-exceptions-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\lz4\\lz4-java\\1.8.0\\lz4-java-1.8.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-functional_2.13\\3.0.1\\play-functional_2.13-3.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.13\\scala-reflect-2.13.13.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.37.0\\checker-qual-3.37.0.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\2.8\\j2objc-annotations-2.8.jar",
+            "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-protobuf-v3_2.13\\1.0.2\\pekko-protobuf-v3_2.13-1.0.2.jar"
+        ],
+        "out": "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\.bloop\\root",
+        "classesDir": "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\.bloop\\root\\scala-2.13\\classes",
+        "resources": [
+            "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\conf",
+            "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\target\\scala-2.13\\resource_managed\\main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.13",
+            "options": [
+                "-deprecation",
+                "-unchecked",
+                "-encoding",
+                "utf8"
+            ],
+            "jars": [
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.13.13\\scala-compiler-2.13.13.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.13\\scala-reflect-2.13.13.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\github\\java-diff-utils\\java-diff-utils\\4.12\\java-diff-utils-4.12.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline\\3.24.1\\jline-3.24.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.13.0\\jna-5.13.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-encoding",
+                "utf8",
+                "-g"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "zio.test.sbt.ZTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "weaver.framework.CatsEffect"
+                    ]
+                },
+                {
+                    "names": [
+                        "hedgehog.sbt.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Program Files\\Microsoft\\jdk-21.0.2.13-hotspot",
+                "options": [
+                    "-Duser.dir=C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia"
+                ]
+            },
+            "mainClass": [
+                
+            ],
+            "runtimeConfig": {
+                "home": "C:\\Program Files\\Microsoft\\jdk-21.0.2.13-hotspot",
+                "options": [
+                    "-Duser.dir=C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia"
+                ]
+            },
+            "classpath": [
+                "C:\\Users\\Sergio Gomez Damas\\Documents\\GitHub\\Conectopia\\conectopia\\.bloop\\root\\scala-2.13\\classes",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\twirl\\twirl-api_2.13\\2.0.3\\twirl-api_2.13-2.0.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-server_2.13\\3.0.1\\play-server_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-logback_2.13\\3.0.1\\play-logback_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-pekko-http-server_2.13\\3.0.1\\play-pekko-http-server_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-filters-helpers_2.13\\3.0.1\\play-filters-helpers_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-guice_2.13\\3.0.1\\play-guice_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\hibernate-core\\5.5.7.Final\\hibernate-core-5.5.7.Final.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.13\\2.2.0\\scala-xml_2.13-2.2.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play_2.13\\3.0.1\\play_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-classic\\1.4.14\\logback-classic-1.4.14.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-streams_2.13\\3.0.1\\play-streams_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-http-core_2.13\\1.0.0\\pekko-http-core_2.13-1.0.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\guice\\6.0.0\\guice-6.0.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\extensions\\guice-assistedinject\\6.0.0\\guice-assistedinject-6.0.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\logging\\jboss-logging\\3.4.2.Final\\jboss-logging-3.4.2.Final.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\persistence\\javax.persistence-api\\2.2\\javax.persistence-api-2.2.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\javassist\\javassist\\3.27.0-GA\\javassist-3.27.0-GA.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\bytebuddy\\byte-buddy\\1.11.12\\byte-buddy-1.11.12.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\antlr\\antlr\\2.7.7\\antlr-2.7.7.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\spec\\javax\\transaction\\jboss-transaction-api_1.2_spec\\1.1.1.Final\\jboss-transaction-api_1.2_spec-1.1.1.Final.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\jandex\\2.2.3.Final\\jandex-2.2.3.Final.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\classmate\\1.5.1\\classmate-1.5.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\activation\\javax.activation-api\\1.2.0\\javax.activation-api-1.2.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\common\\hibernate-commons-annotations\\5.1.2.Final\\hibernate-commons-annotations-5.1.2.Final.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\xml\\bind\\jaxb-api\\2.3.1\\jaxb-api-2.3.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\jaxb-runtime\\2.3.1\\jaxb-runtime-2.3.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-build-link\\3.0.1\\play-build-link-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-configuration_2.13\\3.0.1\\play-configuration_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\2.0.9\\slf4j-api-2.0.9.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jul-to-slf4j\\2.0.9\\jul-to-slf4j-2.0.9.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jcl-over-slf4j\\2.0.9\\jcl-over-slf4j-2.0.9.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor_2.13\\1.0.2\\pekko-actor_2.13-1.0.2.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor-typed_2.13\\1.0.2\\pekko-actor-typed_2.13-1.0.2.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-slf4j_2.13\\1.0.2\\pekko-slf4j_2.13-1.0.2.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-serialization-jackson_2.13\\1.0.2\\pekko-serialization-jackson_2.13-1.0.2.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.14.3\\jackson-core-2.14.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.14.3\\jackson-annotations-2.14.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.14.3\\jackson-datatype-jdk8-2.14.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.14.3\\jackson-datatype-jsr310-2.14.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.14.3\\jackson-databind-2.14.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-cbor\\2.14.3\\jackson-dataformat-cbor-2.14.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-parameter-names\\2.14.3\\jackson-module-parameter-names-2.14.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.14.3\\jackson-module-scala_2.13-2.14.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-api\\0.11.5\\jjwt-api-0.11.5.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-impl\\0.11.5\\jjwt-impl-0.11.5.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-jackson\\0.11.5\\jjwt-jackson-0.11.5.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-json_2.13\\3.0.1\\play-json_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\32.1.3-jre\\guava-32.1.3-jre.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\inject\\javax.inject\\1\\javax.inject-1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\ssl-config-core_2.13\\0.6.1\\ssl-config-core_2.13-0.6.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-core\\1.4.14\\logback-core-1.4.14.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.4\\reactive-streams-1.0.4.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-stream_2.13\\1.0.2\\pekko-stream_2.13-1.0.2.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-parsing_2.13\\1.0.0\\pekko-parsing_2.13-1.0.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\parboiled\\parboiled_2.13\\2.5.0\\parboiled_2.13-2.5.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\jakarta\\inject\\jakarta.inject-api\\2.0.1\\jakarta.inject-api-2.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\aopalliance\\aopalliance\\1.0\\aopalliance-1.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.21.1\\error_prone_annotations-2.21.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\txw2\\2.3.1\\txw2-2.3.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\istack\\istack-commons-runtime\\3.0.7\\istack-commons-runtime-3.0.7.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jvnet\\staxex\\stax-ex\\1.8\\stax-ex-1.8.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\xml\\fastinfoset\\FastInfoset\\1.2.15\\FastInfoset-1.2.15.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-exceptions\\3.0.1\\play-exceptions-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\lz4\\lz4-java\\1.8.0\\lz4-java-1.8.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-functional_2.13\\3.0.1\\play-functional_2.13-3.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.13\\scala-reflect-2.13.13.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.37.0\\checker-qual-3.37.0.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\2.8\\j2objc-annotations-2.8.jar",
+                "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-protobuf-v3_2.13\\1.0.2\\pekko-protobuf-v3_2.13-1.0.2.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework.twirl",
+                    "name": "twirl-api_2.13",
+                    "version": "2.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "twirl-api_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\twirl\\twirl-api_2.13\\2.0.3\\twirl-api_2.13-2.0.3.jar"
+                        },
+                        {
+                            "name": "twirl-api_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\twirl\\twirl-api_2.13\\2.0.3\\twirl-api_2.13-2.0.3-sources.jar"
+                        },
+                        {
+                            "name": "twirl-api_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\twirl\\twirl-api_2.13\\2.0.3\\twirl-api_2.13-2.0.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-server_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-server_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-server_2.13\\3.0.1\\play-server_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-server_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-server_2.13\\3.0.1\\play-server_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-server_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-server_2.13\\3.0.1\\play-server_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-logback_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-logback_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-logback_2.13\\3.0.1\\play-logback_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-logback_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-logback_2.13\\3.0.1\\play-logback_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-logback_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-logback_2.13\\3.0.1\\play-logback_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-pekko-http-server_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-pekko-http-server_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-pekko-http-server_2.13\\3.0.1\\play-pekko-http-server_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-pekko-http-server_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-pekko-http-server_2.13\\3.0.1\\play-pekko-http-server_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-pekko-http-server_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-pekko-http-server_2.13\\3.0.1\\play-pekko-http-server_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-filters-helpers_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-filters-helpers_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-filters-helpers_2.13\\3.0.1\\play-filters-helpers_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-filters-helpers_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-filters-helpers_2.13\\3.0.1\\play-filters-helpers_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-filters-helpers_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-filters-helpers_2.13\\3.0.1\\play-filters-helpers_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-guice_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-guice_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-guice_2.13\\3.0.1\\play-guice_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-guice_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-guice_2.13\\3.0.1\\play-guice_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-guice_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-guice_2.13\\3.0.1\\play-guice_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hibernate",
+                    "name": "hibernate-core",
+                    "version": "5.5.7.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "hibernate-core",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\hibernate-core\\5.5.7.Final\\hibernate-core-5.5.7.Final.jar"
+                        },
+                        {
+                            "name": "hibernate-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\hibernate-core\\5.5.7.Final\\hibernate-core-5.5.7.Final-sources.jar"
+                        },
+                        {
+                            "name": "hibernate-core",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\hibernate-core\\5.5.7.Final\\hibernate-core-5.5.7.Final-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.13",
+                    "version": "2.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.13\\2.2.0\\scala-xml_2.13-2.2.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.13\\2.2.0\\scala-xml_2.13-2.2.0-sources.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.13\\2.2.0\\scala-xml_2.13-2.2.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play_2.13\\3.0.1\\play_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play_2.13\\3.0.1\\play_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play_2.13\\3.0.1\\play_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.4.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-classic\\1.4.14\\logback-classic-1.4.14.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-classic\\1.4.14\\logback-classic-1.4.14-sources.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-classic\\1.4.14\\logback-classic-1.4.14-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-streams_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-streams_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-streams_2.13\\3.0.1\\play-streams_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-streams_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-streams_2.13\\3.0.1\\play-streams_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-streams_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-streams_2.13\\3.0.1\\play-streams_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-http-core_2.13",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-http-core_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-http-core_2.13\\1.0.0\\pekko-http-core_2.13-1.0.0.jar"
+                        },
+                        {
+                            "name": "pekko-http-core_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-http-core_2.13\\1.0.0\\pekko-http-core_2.13-1.0.0-sources.jar"
+                        },
+                        {
+                            "name": "pekko-http-core_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-http-core_2.13\\1.0.0\\pekko-http-core_2.13-1.0.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.inject",
+                    "name": "guice",
+                    "version": "6.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guice",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\guice\\6.0.0\\guice-6.0.0.jar"
+                        },
+                        {
+                            "name": "guice",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\guice\\6.0.0\\guice-6.0.0-sources.jar"
+                        },
+                        {
+                            "name": "guice",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\guice\\6.0.0\\guice-6.0.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.inject.extensions",
+                    "name": "guice-assistedinject",
+                    "version": "6.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guice-assistedinject",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\extensions\\guice-assistedinject\\6.0.0\\guice-assistedinject-6.0.0.jar"
+                        },
+                        {
+                            "name": "guice-assistedinject",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\extensions\\guice-assistedinject\\6.0.0\\guice-assistedinject-6.0.0-sources.jar"
+                        },
+                        {
+                            "name": "guice-assistedinject",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\inject\\extensions\\guice-assistedinject\\6.0.0\\guice-assistedinject-6.0.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jboss.logging",
+                    "name": "jboss-logging",
+                    "version": "3.4.2.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jboss-logging",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\logging\\jboss-logging\\3.4.2.Final\\jboss-logging-3.4.2.Final.jar"
+                        },
+                        {
+                            "name": "jboss-logging",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\logging\\jboss-logging\\3.4.2.Final\\jboss-logging-3.4.2.Final-sources.jar"
+                        },
+                        {
+                            "name": "jboss-logging",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\logging\\jboss-logging\\3.4.2.Final\\jboss-logging-3.4.2.Final-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.persistence",
+                    "name": "javax.persistence-api",
+                    "version": "2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javax.persistence-api",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\persistence\\javax.persistence-api\\2.2\\javax.persistence-api-2.2.jar"
+                        },
+                        {
+                            "name": "javax.persistence-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\persistence\\javax.persistence-api\\2.2\\javax.persistence-api-2.2-sources.jar"
+                        },
+                        {
+                            "name": "javax.persistence-api",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\persistence\\javax.persistence-api\\2.2\\javax.persistence-api-2.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.javassist",
+                    "name": "javassist",
+                    "version": "3.27.0-GA",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javassist",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\javassist\\javassist\\3.27.0-GA\\javassist-3.27.0-GA.jar"
+                        },
+                        {
+                            "name": "javassist",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\javassist\\javassist\\3.27.0-GA\\javassist-3.27.0-GA-sources.jar"
+                        },
+                        {
+                            "name": "javassist",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\javassist\\javassist\\3.27.0-GA\\javassist-3.27.0-GA-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy",
+                    "version": "1.11.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\bytebuddy\\byte-buddy\\1.11.12\\byte-buddy-1.11.12.jar"
+                        },
+                        {
+                            "name": "byte-buddy",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\bytebuddy\\byte-buddy\\1.11.12\\byte-buddy-1.11.12-sources.jar"
+                        },
+                        {
+                            "name": "byte-buddy",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\bytebuddy\\byte-buddy\\1.11.12\\byte-buddy-1.11.12-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "antlr",
+                    "name": "antlr",
+                    "version": "2.7.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "antlr",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\antlr\\antlr\\2.7.7\\antlr-2.7.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jboss.spec.javax.transaction",
+                    "name": "jboss-transaction-api_1.2_spec",
+                    "version": "1.1.1.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jboss-transaction-api_1.2_spec",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\spec\\javax\\transaction\\jboss-transaction-api_1.2_spec\\1.1.1.Final\\jboss-transaction-api_1.2_spec-1.1.1.Final.jar"
+                        },
+                        {
+                            "name": "jboss-transaction-api_1.2_spec",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\spec\\javax\\transaction\\jboss-transaction-api_1.2_spec\\1.1.1.Final\\jboss-transaction-api_1.2_spec-1.1.1.Final-sources.jar"
+                        },
+                        {
+                            "name": "jboss-transaction-api_1.2_spec",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\spec\\javax\\transaction\\jboss-transaction-api_1.2_spec\\1.1.1.Final\\jboss-transaction-api_1.2_spec-1.1.1.Final-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jboss",
+                    "name": "jandex",
+                    "version": "2.2.3.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jandex",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\jandex\\2.2.3.Final\\jandex-2.2.3.Final.jar"
+                        },
+                        {
+                            "name": "jandex",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jboss\\jandex\\2.2.3.Final\\jandex-2.2.3.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml",
+                    "name": "classmate",
+                    "version": "1.5.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "classmate",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\classmate\\1.5.1\\classmate-1.5.1.jar"
+                        },
+                        {
+                            "name": "classmate",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\classmate\\1.5.1\\classmate-1.5.1-sources.jar"
+                        },
+                        {
+                            "name": "classmate",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\classmate\\1.5.1\\classmate-1.5.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.activation",
+                    "name": "javax.activation-api",
+                    "version": "1.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javax.activation-api",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\activation\\javax.activation-api\\1.2.0\\javax.activation-api-1.2.0.jar"
+                        },
+                        {
+                            "name": "javax.activation-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\activation\\javax.activation-api\\1.2.0\\javax.activation-api-1.2.0-sources.jar"
+                        },
+                        {
+                            "name": "javax.activation-api",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\activation\\javax.activation-api\\1.2.0\\javax.activation-api-1.2.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hibernate.common",
+                    "name": "hibernate-commons-annotations",
+                    "version": "5.1.2.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "hibernate-commons-annotations",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\common\\hibernate-commons-annotations\\5.1.2.Final\\hibernate-commons-annotations-5.1.2.Final.jar"
+                        },
+                        {
+                            "name": "hibernate-commons-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hibernate\\common\\hibernate-commons-annotations\\5.1.2.Final\\hibernate-commons-annotations-5.1.2.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.xml.bind",
+                    "name": "jaxb-api",
+                    "version": "2.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jaxb-api",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\xml\\bind\\jaxb-api\\2.3.1\\jaxb-api-2.3.1.jar"
+                        },
+                        {
+                            "name": "jaxb-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\xml\\bind\\jaxb-api\\2.3.1\\jaxb-api-2.3.1-sources.jar"
+                        },
+                        {
+                            "name": "jaxb-api",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\xml\\bind\\jaxb-api\\2.3.1\\jaxb-api-2.3.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jaxb",
+                    "name": "jaxb-runtime",
+                    "version": "2.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jaxb-runtime",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\jaxb-runtime\\2.3.1\\jaxb-runtime-2.3.1.jar"
+                        },
+                        {
+                            "name": "jaxb-runtime",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\jaxb-runtime\\2.3.1\\jaxb-runtime-2.3.1-sources.jar"
+                        },
+                        {
+                            "name": "jaxb-runtime",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\jaxb-runtime\\2.3.1\\jaxb-runtime-2.3.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-build-link",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-build-link",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-build-link\\3.0.1\\play-build-link-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-build-link",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-build-link\\3.0.1\\play-build-link-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-build-link",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-build-link\\3.0.1\\play-build-link-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-configuration_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-configuration_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-configuration_2.13\\3.0.1\\play-configuration_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-configuration_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-configuration_2.13\\3.0.1\\play-configuration_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-configuration_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-configuration_2.13\\3.0.1\\play-configuration_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "2.0.9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\2.0.9\\slf4j-api-2.0.9.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\2.0.9\\slf4j-api-2.0.9-sources.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\2.0.9\\slf4j-api-2.0.9-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jul-to-slf4j",
+                    "version": "2.0.9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jul-to-slf4j",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jul-to-slf4j\\2.0.9\\jul-to-slf4j-2.0.9.jar"
+                        },
+                        {
+                            "name": "jul-to-slf4j",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jul-to-slf4j\\2.0.9\\jul-to-slf4j-2.0.9-sources.jar"
+                        },
+                        {
+                            "name": "jul-to-slf4j",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jul-to-slf4j\\2.0.9\\jul-to-slf4j-2.0.9-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jcl-over-slf4j",
+                    "version": "2.0.9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jcl-over-slf4j",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jcl-over-slf4j\\2.0.9\\jcl-over-slf4j-2.0.9.jar"
+                        },
+                        {
+                            "name": "jcl-over-slf4j",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jcl-over-slf4j\\2.0.9\\jcl-over-slf4j-2.0.9-sources.jar"
+                        },
+                        {
+                            "name": "jcl-over-slf4j",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\jcl-over-slf4j\\2.0.9\\jcl-over-slf4j-2.0.9-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-actor_2.13",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-actor_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor_2.13\\1.0.2\\pekko-actor_2.13-1.0.2.jar"
+                        },
+                        {
+                            "name": "pekko-actor_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor_2.13\\1.0.2\\pekko-actor_2.13-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "pekko-actor_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor_2.13\\1.0.2\\pekko-actor_2.13-1.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-actor-typed_2.13",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-actor-typed_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor-typed_2.13\\1.0.2\\pekko-actor-typed_2.13-1.0.2.jar"
+                        },
+                        {
+                            "name": "pekko-actor-typed_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor-typed_2.13\\1.0.2\\pekko-actor-typed_2.13-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "pekko-actor-typed_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-actor-typed_2.13\\1.0.2\\pekko-actor-typed_2.13-1.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-slf4j_2.13",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-slf4j_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-slf4j_2.13\\1.0.2\\pekko-slf4j_2.13-1.0.2.jar"
+                        },
+                        {
+                            "name": "pekko-slf4j_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-slf4j_2.13\\1.0.2\\pekko-slf4j_2.13-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "pekko-slf4j_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-slf4j_2.13\\1.0.2\\pekko-slf4j_2.13-1.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-serialization-jackson_2.13",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-serialization-jackson_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-serialization-jackson_2.13\\1.0.2\\pekko-serialization-jackson_2.13-1.0.2.jar"
+                        },
+                        {
+                            "name": "pekko-serialization-jackson_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-serialization-jackson_2.13\\1.0.2\\pekko-serialization-jackson_2.13-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "pekko-serialization-jackson_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-serialization-jackson_2.13\\1.0.2\\pekko-serialization-jackson_2.13-1.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.14.3\\jackson-core-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.14.3\\jackson-core-2.14.3-sources.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.14.3\\jackson-core-2.14.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.14.3\\jackson-annotations-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.14.3\\jackson-annotations-2.14.3-sources.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.14.3\\jackson-annotations-2.14.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.14.3\\jackson-datatype-jdk8-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.14.3\\jackson-datatype-jdk8-2.14.3-sources.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.14.3\\jackson-datatype-jdk8-2.14.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.14.3\\jackson-datatype-jsr310-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.14.3\\jackson-datatype-jsr310-2.14.3-sources.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.14.3\\jackson-datatype-jsr310-2.14.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.14.3\\jackson-databind-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.14.3\\jackson-databind-2.14.3-sources.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.14.3\\jackson-databind-2.14.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.dataformat",
+                    "name": "jackson-dataformat-cbor",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-dataformat-cbor",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-cbor\\2.14.3\\jackson-dataformat-cbor-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-dataformat-cbor",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-cbor\\2.14.3\\jackson-dataformat-cbor-2.14.3-sources.jar"
+                        },
+                        {
+                            "name": "jackson-dataformat-cbor",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-cbor\\2.14.3\\jackson-dataformat-cbor-2.14.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-parameter-names",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-parameter-names\\2.14.3\\jackson-module-parameter-names-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-parameter-names\\2.14.3\\jackson-module-parameter-names-2.14.3-sources.jar"
+                        },
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-parameter-names\\2.14.3\\jackson-module-parameter-names-2.14.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-scala_2.13",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.14.3\\jackson-module-scala_2.13-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.14.3\\jackson-module-scala_2.13-2.14.3-sources.jar"
+                        },
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.14.3\\jackson-module-scala_2.13-2.14.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.jsonwebtoken",
+                    "name": "jjwt-api",
+                    "version": "0.11.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jjwt-api",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-api\\0.11.5\\jjwt-api-0.11.5.jar"
+                        },
+                        {
+                            "name": "jjwt-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-api\\0.11.5\\jjwt-api-0.11.5-sources.jar"
+                        },
+                        {
+                            "name": "jjwt-api",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-api\\0.11.5\\jjwt-api-0.11.5-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.jsonwebtoken",
+                    "name": "jjwt-impl",
+                    "version": "0.11.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jjwt-impl",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-impl\\0.11.5\\jjwt-impl-0.11.5.jar"
+                        },
+                        {
+                            "name": "jjwt-impl",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-impl\\0.11.5\\jjwt-impl-0.11.5-sources.jar"
+                        },
+                        {
+                            "name": "jjwt-impl",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-impl\\0.11.5\\jjwt-impl-0.11.5-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.jsonwebtoken",
+                    "name": "jjwt-jackson",
+                    "version": "0.11.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jjwt-jackson",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-jackson\\0.11.5\\jjwt-jackson-0.11.5.jar"
+                        },
+                        {
+                            "name": "jjwt-jackson",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-jackson\\0.11.5\\jjwt-jackson-0.11.5-sources.jar"
+                        },
+                        {
+                            "name": "jjwt-jackson",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\jsonwebtoken\\jjwt-jackson\\0.11.5\\jjwt-jackson-0.11.5-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-json_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-json_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-json_2.13\\3.0.1\\play-json_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-json_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-json_2.13\\3.0.1\\play-json_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-json_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-json_2.13\\3.0.1\\play-json_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "32.1.3-jre",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\32.1.3-jre\\guava-32.1.3-jre.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\32.1.3-jre\\guava-32.1.3-jre-sources.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\32.1.3-jre\\guava-32.1.3-jre-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.inject",
+                    "name": "javax.inject",
+                    "version": "1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javax.inject",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\inject\\javax.inject\\1\\javax.inject-1.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\inject\\javax.inject\\1\\javax.inject-1-sources.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\javax\\inject\\javax.inject\\1\\javax.inject-1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "ssl-config-core_2.13",
+                    "version": "0.6.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ssl-config-core_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\ssl-config-core_2.13\\0.6.1\\ssl-config-core_2.13-0.6.1.jar"
+                        },
+                        {
+                            "name": "ssl-config-core_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\ssl-config-core_2.13\\0.6.1\\ssl-config-core_2.13-0.6.1-sources.jar"
+                        },
+                        {
+                            "name": "ssl-config-core_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\ssl-config-core_2.13\\0.6.1\\ssl-config-core_2.13-0.6.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.13",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2-sources.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.4.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-core\\1.4.14\\logback-core-1.4.14.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-core\\1.4.14\\logback-core-1.4.14-sources.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-core\\1.4.14\\logback-core-1.4.14-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.reactivestreams",
+                    "name": "reactive-streams",
+                    "version": "1.0.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "reactive-streams",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.4\\reactive-streams-1.0.4.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.4\\reactive-streams-1.0.4-sources.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.4\\reactive-streams-1.0.4-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-stream_2.13",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-stream_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-stream_2.13\\1.0.2\\pekko-stream_2.13-1.0.2.jar"
+                        },
+                        {
+                            "name": "pekko-stream_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-stream_2.13\\1.0.2\\pekko-stream_2.13-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "pekko-stream_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-stream_2.13\\1.0.2\\pekko-stream_2.13-1.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-parsing_2.13",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-parsing_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-parsing_2.13\\1.0.0\\pekko-parsing_2.13-1.0.0.jar"
+                        },
+                        {
+                            "name": "pekko-parsing_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-parsing_2.13\\1.0.0\\pekko-parsing_2.13-1.0.0-sources.jar"
+                        },
+                        {
+                            "name": "pekko-parsing_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-parsing_2.13\\1.0.0\\pekko-parsing_2.13-1.0.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.parboiled",
+                    "name": "parboiled_2.13",
+                    "version": "2.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "parboiled_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\parboiled\\parboiled_2.13\\2.5.0\\parboiled_2.13-2.5.0.jar"
+                        },
+                        {
+                            "name": "parboiled_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\parboiled\\parboiled_2.13\\2.5.0\\parboiled_2.13-2.5.0-sources.jar"
+                        },
+                        {
+                            "name": "parboiled_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\parboiled\\parboiled_2.13\\2.5.0\\parboiled_2.13-2.5.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.inject",
+                    "name": "jakarta.inject-api",
+                    "version": "2.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.inject-api",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\jakarta\\inject\\jakarta.inject-api\\2.0.1\\jakarta.inject-api-2.0.1.jar"
+                        },
+                        {
+                            "name": "jakarta.inject-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\jakarta\\inject\\jakarta.inject-api\\2.0.1\\jakarta.inject-api-2.0.1-sources.jar"
+                        },
+                        {
+                            "name": "jakarta.inject-api",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\jakarta\\inject\\jakarta.inject-api\\2.0.1\\jakarta.inject-api-2.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "aopalliance",
+                    "name": "aopalliance",
+                    "version": "1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aopalliance",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\aopalliance\\aopalliance\\1.0\\aopalliance-1.0.jar"
+                        },
+                        {
+                            "name": "aopalliance",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\aopalliance\\aopalliance\\1.0\\aopalliance-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.21.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.21.1\\error_prone_annotations-2.21.1.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.21.1\\error_prone_annotations-2.21.1-sources.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.21.1\\error_prone_annotations-2.21.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish.jaxb",
+                    "name": "txw2",
+                    "version": "2.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "txw2",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\txw2\\2.3.1\\txw2-2.3.1.jar"
+                        },
+                        {
+                            "name": "txw2",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\txw2\\2.3.1\\txw2-2.3.1-sources.jar"
+                        },
+                        {
+                            "name": "txw2",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\glassfish\\jaxb\\txw2\\2.3.1\\txw2-2.3.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.sun.istack",
+                    "name": "istack-commons-runtime",
+                    "version": "3.0.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "istack-commons-runtime",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\istack\\istack-commons-runtime\\3.0.7\\istack-commons-runtime-3.0.7.jar"
+                        },
+                        {
+                            "name": "istack-commons-runtime",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\istack\\istack-commons-runtime\\3.0.7\\istack-commons-runtime-3.0.7-sources.jar"
+                        },
+                        {
+                            "name": "istack-commons-runtime",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\istack\\istack-commons-runtime\\3.0.7\\istack-commons-runtime-3.0.7-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jvnet.staxex",
+                    "name": "stax-ex",
+                    "version": "1.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "stax-ex",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jvnet\\staxex\\stax-ex\\1.8\\stax-ex-1.8.jar"
+                        },
+                        {
+                            "name": "stax-ex",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jvnet\\staxex\\stax-ex\\1.8\\stax-ex-1.8-sources.jar"
+                        },
+                        {
+                            "name": "stax-ex",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jvnet\\staxex\\stax-ex\\1.8\\stax-ex-1.8-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.sun.xml.fastinfoset",
+                    "name": "FastInfoset",
+                    "version": "1.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "FastInfoset",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\xml\\fastinfoset\\FastInfoset\\1.2.15\\FastInfoset-1.2.15.jar"
+                        },
+                        {
+                            "name": "FastInfoset",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\xml\\fastinfoset\\FastInfoset\\1.2.15\\FastInfoset-1.2.15-sources.jar"
+                        },
+                        {
+                            "name": "FastInfoset",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\sun\\xml\\fastinfoset\\FastInfoset\\1.2.15\\FastInfoset-1.2.15-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-exceptions",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-exceptions",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-exceptions\\3.0.1\\play-exceptions-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-exceptions",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-exceptions\\3.0.1\\play-exceptions-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-exceptions",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-exceptions\\3.0.1\\play-exceptions-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3-sources.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.3\\config-1.4.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.lz4",
+                    "name": "lz4-java",
+                    "version": "1.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lz4-java",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\lz4\\lz4-java\\1.8.0\\lz4-java-1.8.0.jar"
+                        },
+                        {
+                            "name": "lz4-java",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\lz4\\lz4-java\\1.8.0\\lz4-java-1.8.0-sources.jar"
+                        },
+                        {
+                            "name": "lz4-java",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\lz4\\lz4-java\\1.8.0\\lz4-java-1.8.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.thoughtworks.paranamer",
+                    "name": "paranamer",
+                    "version": "2.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "paranamer",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8-sources.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-functional_2.13",
+                    "version": "3.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-functional_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-functional_2.13\\3.0.1\\play-functional_2.13-3.0.1.jar"
+                        },
+                        {
+                            "name": "play-functional_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-functional_2.13\\3.0.1\\play-functional_2.13-3.0.1-sources.jar"
+                        },
+                        {
+                            "name": "play-functional_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-functional_2.13\\3.0.1\\play-functional_2.13-3.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.13\\scala-reflect-2.13.13.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.13\\scala-reflect-2.13.13-sources.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.13\\scala-reflect-2.13.13-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "failureaccess",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "failureaccess",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1.jar"
+                        },
+                        {
+                            "name": "failureaccess",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1-sources.jar"
+                        },
+                        {
+                            "name": "failureaccess",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "listenablefuture",
+                    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "listenablefuture",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2-sources.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.37.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.37.0\\checker-qual-3.37.0.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.37.0\\checker-qual-3.37.0-sources.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.37.0\\checker-qual-3.37.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.j2objc",
+                    "name": "j2objc-annotations",
+                    "version": "2.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "j2objc-annotations",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\2.8\\j2objc-annotations-2.8.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\2.8\\j2objc-annotations-2.8-sources.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\2.8\\j2objc-annotations-2.8-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-protobuf-v3_2.13",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-protobuf-v3_2.13",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-protobuf-v3_2.13\\1.0.2\\pekko-protobuf-v3_2.13-1.0.2.jar"
+                        },
+                        {
+                            "name": "pekko-protobuf-v3_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-protobuf-v3_2.13\\1.0.2\\pekko-protobuf-v3_2.13-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "pekko-protobuf-v3_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\pekko\\pekko-protobuf-v3_2.13\\1.0.2\\pekko-protobuf-v3_2.13-1.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.13",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Sergio Gomez Damas\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.13\\scala-library-2.13.13-javadoc.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
