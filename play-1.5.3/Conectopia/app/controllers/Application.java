@@ -12,7 +12,7 @@ public class Application extends Controller {
     public static void index() {
         render();
     }
-    public static void loginGet()
+    public static void login()
     {
         render();
     }
@@ -20,7 +20,7 @@ public class Application extends Controller {
     {
         render();
     }
-    public static void registerGet()
+    public static void register()
     {
         render();
     }

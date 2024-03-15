@@ -6,8 +6,8 @@
 GET     /                                       Application.index
 GET     /index                                  Application.index
 GET     /index.html                             Application.index
-GET     /login                                  Application.loginGet
-GET     /register                               Application.registerGet
+GET     /login                                  Application.login
+GET     /register                               Application.register
 POST    /register                               Application.registerPost
 
 
