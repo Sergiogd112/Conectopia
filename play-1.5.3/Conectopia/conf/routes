@@ -6,7 +6,10 @@
 GET     /                                       Application.index
 GET     /index                                  Application.index
 GET     /index.html                             Application.index
-GET     /login                                  Application.login
+GET     /login                                  Application.loginGet
+GET     /register                               Application.registerGet
+POST    /register                               Application.registerPost
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

@@ -12,7 +12,21 @@ public class Application extends Controller {
     public static void index() {
         render();
     }
-    public static void login() {
+    public static void loginGet()
+    {
+        render();
+    }
+    public static void loginPost()
+    {
+        render();
+    }
+    public static void registerGet()
+    {
+        render();
+    }
+    public static void registerPost()
+    {
+        User u = User.find("byName").first();
         render();
     }
 
