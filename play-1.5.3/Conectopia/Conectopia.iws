@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/Application/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Application/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Application/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/tags/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,7 @@
       <workItem from="1710426170015" duration="896000" />
       <workItem from="1710444450898" duration="4227000" />
       <workItem from="1710512067689" duration="372000" />
-      <workItem from="1710512479130" duration="5443000" />
+      <workItem from="1710512479130" duration="6210000" />
     </task>
     <servers />
   </component>
