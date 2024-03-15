@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../conectopia/project/.bloop/conectopia-build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../conectopia/project/.bloop/conectopia-build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../conectopia/project/project/.bloop/conectopia-build-build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../conectopia/project/project/.bloop/conectopia-build-build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Application/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Application/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/tags/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,6 +33,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -49,10 +57,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Shell Script.Test.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Sergio Gomez Damas/Documents/GitHub/Conectopia/play-1.5.3/modules/docviewer/app",
-    "last_opened_file_path": "C:/Users/Sergio Gomez Damas/Documents/GitHub/Conectopia/play-1.5.3/Conectopia/app/views/Application",
+    "last_opened_file_path": "C:/Users/Pc2021/Desktop/CUADRI PRIMAVERA 23-24/PES/Conectopia/play-1.5.3/Conectopia/Conectopia.ipr",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -145,6 +154,7 @@
       <workItem from="1710444450898" duration="4227000" />
       <workItem from="1710512067689" duration="372000" />
       <workItem from="1710512479130" duration="5443000" />
+      <workItem from="1710518436612" duration="667000" />
     </task>
     <servers />
   </component>
@@ -153,6 +163,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
