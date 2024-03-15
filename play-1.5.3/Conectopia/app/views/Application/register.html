@@ -1,23 +1,49 @@
 #{extends 'main.html' /}
 #{set title:'Register' /}
+<div class="d-flex justify-content-center align-items-center" style="padding: 4%;">
+    <div class="card">
+        <div class="card-body">
+            <form onsubmit="/register" method="post">
+                <div class="mb-3">
+                    <label for="InputUname" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="InputUname" aria-describedby="Username">
+                </div>
+                <div class="mb-3">
+                    <label for="InputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="InputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="InputPassword1"
+                           oninput="checkPasswordMatch()">
 
-<form>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Username</label>
-        <input type="email" class="form-control" id="InputUname" aria-describedby="Username">
+                </div>
+                <div class="mb-3">
+                    <label for="InputPassword2" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="InputPassword2"
+                           oninput="checkPasswordMatch()">
+                    <span id="confirmPasswordTick" style="display: none; color: #67A927">&#10004;</span>
+                    <span id="confirmPasswordCross" style="display: none; color: crimson">&#10060;</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</div>
+
+
+<script>
+    function checkPasswordMatch() {
+        var password = document.getElementById('InputPassword1').value;
+        var confirmPassword = document.getElementById('InputPassword2').value;
+
+        if (password === confirmPassword) {
+            document.getElementById('confirmPasswordTick').style.display = 'inline';
+            document.getElementById('confirmPasswordCross').style.display = 'none';
+        } else {
+            document.getElementById('confirmPasswordTick').style.display = 'none';
+            document.getElementById('confirmPasswordCross').style.display = 'inline';
+        }
+    }
+</script>
