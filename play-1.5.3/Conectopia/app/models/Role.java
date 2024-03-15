@@ -13,12 +13,13 @@ import java.util.List;
 public class Role extends Model {
     public String name;
     public String color;
-    @OneToMany
-    public List<Member> members= new ArrayList<Member>();
+    @OneToMany(mappedBy = "role")
+    public List<Member> members = new ArrayList<Member>();
     @ManyToOne
     public Server server;
     @ManyToMany
-    public List<Chat> chats= new ArrayList<Chat>();
+    public List<Chat> chats = new ArrayList<Chat>();
+
     public Role(String name, String color, Server server) {
         this.name = name;
         this.color = color;

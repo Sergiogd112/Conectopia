@@ -14,16 +14,18 @@ public class User extends Model {
     public String email;
     public String password;
     public Date created;
-    @OneToMany
-    public List<Badge> badges= new ArrayList<Badge>();
-    @OneToMany
-    public List<Member> members= new ArrayList<Member>();
+    @OneToMany(mappedBy = "user")
+    public List<Badge> badges = new ArrayList<Badge>();
+    @OneToMany(mappedBy = "user")
+    public List<Member> members = new ArrayList<Member>();
+
     public User(String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.created = new Date();
     }
+
     public User() {
         this.username = "";
         this.email = "";

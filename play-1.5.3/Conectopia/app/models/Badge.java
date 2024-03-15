@@ -25,7 +25,7 @@ public class Badge extends Model {
     }
 
     public Badge() {
-        this.name= "";
+        this.name = "";
         this.description = "";
         this.image = "";
         this.user = null;

@@ -21,7 +21,8 @@ public class Message extends Model {
         this.chat = chat;
         this.created = new Date();
     }
-public Message() {
+
+    public Message() {
         this.content = "";
         this.user = null;
         this.chat = null;

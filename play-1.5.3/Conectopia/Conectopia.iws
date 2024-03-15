@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="" />
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Badge.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Badge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,11 +129,16 @@
       <updated>1710426168917</updated>
       <workItem from="1710426170015" duration="896000" />
       <workItem from="1710444450898" duration="4227000" />
+      <workItem from="1710512067689" duration="372000" />
+      <workItem from="1710512479130" duration="676000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,12 +13,13 @@ public class Server extends Model {
     public String name;
     public String description;
     public Date created;
-    @OneToMany
-    public List<Member> members= new ArrayList<Member>();
-    @OneToMany
-    public List<Role> roles= new ArrayList<Role>();
-    @OneToMany
-    public List<Chat> chats= new ArrayList<Chat>();
+    @OneToMany(mappedBy = "server")
+    public List<Member> members = new ArrayList<Member>();
+    @OneToMany(mappedBy = "server")
+    public List<Role> roles = new ArrayList<Role>();
+    @OneToMany(mappedBy = "server")
+    public List<Chat> chats = new ArrayList<Chat>();
+
     public Server(String name, String description) {
         this.name = name;
         this.description = description;
@@ -26,6 +27,7 @@ public class Server extends Model {
 
 
     }
+
     public Server() {
         this.name = "";
         this.description = "";
