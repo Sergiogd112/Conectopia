@@ -1,6 +1,6 @@
 package models;
 
-import org.hibernate.annotations.Entity;
+import javax.persistence.Entity;
 import play.db.jpa.Model;
 
 import javax.persistence.ManyToMany;
@@ -14,11 +14,11 @@ public class Role extends Model {
     public String name;
     public String color;
     @OneToMany(mappedBy = "role")
-    public List<Member> members = new ArrayList<Member>();
+    public List<Member> members = new ArrayList<>();
     @ManyToOne
     public Server server;
     @ManyToMany
-    public List<Chat> chats = new ArrayList<Chat>();
+    public List<Chat> chats = new ArrayList<>();
 
     public Role(String name, String color, Server server) {
         this.name = name;

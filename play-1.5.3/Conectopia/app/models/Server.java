@@ -1,6 +1,6 @@
 package models;
 
-import org.hibernate.annotations.Entity;
+import javax.persistence.Entity;
 import play.db.jpa.Model;
 
 import javax.persistence.OneToMany;
@@ -14,11 +14,11 @@ public class Server extends Model {
     public String description;
     public Date created;
     @OneToMany(mappedBy = "server")
-    public List<Member> members = new ArrayList<Member>();
+    public List<Member> members = new ArrayList<>();
     @OneToMany(mappedBy = "server")
-    public List<Role> roles = new ArrayList<Role>();
+    public List<Role> roles = new ArrayList<>();
     @OneToMany(mappedBy = "server")
-    public List<Chat> chats = new ArrayList<Chat>();
+    public List<Chat> chats = new ArrayList<>();
 
     public Server(String name, String description) {
         this.name = name;

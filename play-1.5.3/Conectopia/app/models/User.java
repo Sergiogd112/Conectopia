@@ -1,6 +1,6 @@
 package models;
 
-import org.hibernate.annotations.Entity;
+import javax.persistence.Entity;
 import play.db.jpa.Model;
 
 import javax.persistence.OneToMany;
@@ -15,9 +15,9 @@ public class User extends Model {
     public String password;
     public Date created;
     @OneToMany(mappedBy = "user")
-    public List<Badge> badges = new ArrayList<Badge>();
+    public List<Badge> badges = new ArrayList<>();
     @OneToMany(mappedBy = "user")
-    public List<Member> members = new ArrayList<Member>();
+    public List<Member> members = new ArrayList<>();
 
     public User(String username, String email, String password) {
         this.username = username;

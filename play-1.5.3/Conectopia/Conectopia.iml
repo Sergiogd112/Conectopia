@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module relativePaths="true" type="JAVA_MODULE" version="4">
-    <component name="NewModuleRootManager" inherit-compiler-output="true">
-        <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
-        <orderEntry type="sourceFolder" forTests="false" />
-        <exclude-output />
-        <content url="file://$MODULE_DIR$">
-            <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
-            <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
-        </content>
-                <content url="file://C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\play-1.5.3\modules\docviewer">
-            <sourceFolder url="file://C:/Users/Sergio Gomez Damas/Documents/GitHub/Conectopia/play-1.5.3/modules/docviewer/app" isTestSource="false" />
-        </content>
-
-        <orderEntry type="inheritedJdk" />
-        <orderEntry type="module-library">
-            <library name="Project Libraries">
-                <CLASSES>
-                    <root url="file://$MODULE_DIR$/lib" />
-                    <root url="file://$MODULE_DIR$/../modules/docviewer/lib"/>
-
-                </CLASSES>
-                <JAVADOC />
-                <SOURCES>
-                                        <root url="file://$MODULE_DIR$/../modules/docviewer/src"/>
-
-                </SOURCES>
-                <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
-                                <jarDirectory url="file://$MODULE_DIR$/../modules/docviewer/lib" recursive="false"/>
-
-            </library>
-        </orderEntry>
-        <orderEntry type="module-library">
-            <library name="PlayFramework Dependencies">
-                <CLASSES>
-                    <root url="file://C:/Users/Sergio Gomez Damas/Documents/GitHub/Conectopia/play-1.5.3/framework/lib" />
-                </CLASSES>
-                <JAVADOC />
-                <SOURCES />
-                <jarDirectory url="file://C:/Users/Sergio Gomez Damas/Documents/GitHub/Conectopia/play-1.5.3/framework/lib" recursive="false" />
-            </library>
-        </orderEntry>
-        <orderEntry type="module-library">
-            <library>
-                <CLASSES>
-                    <root url="jar://C:/Users/Sergio Gomez Damas/Documents/GitHub/Conectopia/play-1.5.3/framework/play-1.5.3.jar!/" />
-                </CLASSES>
-                <JAVADOC />
-                <SOURCES>
-                    <root url="file://C:/Users/Sergio Gomez Damas/Documents/GitHub/Conectopia/play-1.5.3/framework/src" />
-                </SOURCES>
-            </library>
-        </orderEntry>
-    </component>
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping>
+          <factory-entry name="Conectopia" value="bf9ad871-f27c-402c-90ee-35134ae36945" />
+        </datasource-mapping>
+        <naming-strategy-map />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../modules/docviewer">
+      <sourceFolder url="file://$MODULE_DIR$/../modules/docviewer/app" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="Project Libraries">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+          <root url="file://$MODULE_DIR$/../modules/docviewer/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../modules/docviewer/src" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../modules/docviewer/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PlayFramework Dependencies">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../framework/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../framework/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../framework/play-1.5.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../framework/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
 </module>

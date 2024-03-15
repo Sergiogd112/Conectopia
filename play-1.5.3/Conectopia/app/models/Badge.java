@@ -1,6 +1,6 @@
 package models;
 
-import org.hibernate.annotations.Entity;
+import javax.persistence.Entity;
 import play.db.jpa.Model;
 
 import javax.persistence.ManyToOne;
