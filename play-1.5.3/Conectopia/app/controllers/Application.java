@@ -20,7 +20,6 @@ public class Application extends Controller {
 
     public static void loginPost(String emailuname, String password) {
         // check if emailUname is email or username if it contains @ then it is email
-        System.out.println(emailuname);
         if (emailuname.contains("@")) {
             User u = User.find("byEmailAndPassword", emailuname, password).first();
             if (u == null) {
@@ -29,7 +28,7 @@ public class Application extends Controller {
                 renderText("Usuario encontrado");
             }
         } else {
-            User u = User.find("byUsernameAndPassword", emailuname, password).first();
+            User u = User.find("byNameAndPassword", emailuname, password).first();
             if (u == null) {
                 renderText("Usuario no encontrado");
             } else {
@@ -45,6 +44,20 @@ public class Application extends Controller {
 
     public static void registerPost() {
         User u = User.find("byName").first();
+        if (u == null) {
+            u = new User();
+            u.username = params.get("InputUname");
+            u.email = params.get("InputEmail1");
+            u.password = params.get("InputPassword1");
+            if ((params.get("InputPassword1") != (params.get("InputPassword2")))){
+                renderText("Las contraseñas no coinciden");
+                return ;
+            }
+            u.save();
+            renderText("Usuario registrado");
+        } else {
+            renderText("Usuario ya existe");
+        }
         render();
     }
 
