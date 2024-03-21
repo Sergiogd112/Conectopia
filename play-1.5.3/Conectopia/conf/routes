@@ -12,6 +12,7 @@ GET     /register                               Application.register
 POST    /login                                  Application.loginPost
 POST    /register                               Application.registerPost
 
+GET     /ServerByUser                           Application.ServerByUser
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
