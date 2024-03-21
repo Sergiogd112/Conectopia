@@ -61,4 +61,17 @@ public class Application extends Controller {
         render();
     }
 
+    public static void ServerByUser(String username) {
+        // get all the servers that a user is member off
+        //Return a coma separated list of the server names
+
+        User u = User.find("byName", username).first();
+        List<Member> members = Member.find("byUser", u).fetch();
+        String serverNames = "";
+        for (Member m : members) {
+            serverNames += m.server.name + ",";
+        }
+        renderText(serverNames);
+
+    }
 }
