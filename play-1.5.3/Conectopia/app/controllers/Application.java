@@ -10,26 +10,26 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-        render();
+        render("Application/index.html");
     }
 
     public static void login() {
 
-        render();
+        render("Application/login.html");
     }
 
     public static void loginPost(String emailuname, String password) {
         // check if emailUname is email or username if it contains @ then it is email
         if (emailuname.contains("@")) {
-            User u = User.find("byEmailAndPassword", emailuname, password).first();
-            if (u == null) {
+            User u = User.find("byEmail", emailuname).first();
+            if (u == null || u.password != password) {
                 renderText("Usuario no encontrado");
             } else {
                 renderText("Usuario encontrado");
             }
         } else {
-            User u = User.find("byNameAndPassword", emailuname, password).first();
-            if (u == null) {
+            User u = User.find("byUsername", emailuname).first();
+            if (u == null || u.password != password) {
                 renderText("Usuario no encontrado");
             } else {
                 renderText("Usuario encontrado");
@@ -39,19 +39,25 @@ public class Application extends Controller {
 
     public static void register() {
 
-        render();
+        render("Application/register.html");
     }
 
-    public static void registerPost() {
-        User u = User.find("byName").first();
+    public static void registerPost(String username, String email, String password1, String password2) {
+        User u = User.find("byUsername", username).first();
+        // print evrything
+        System.out.println("username: " + username);
+        System.out.println("email: " + email);
+        System.out.println("password1: " + password1);
+        System.out.println("password2: " + password2);
+
         if (u == null) {
             u = new User();
-            u.username = params.get("InputUname");
-            u.email = params.get("InputEmail1");
-            u.password = params.get("InputPassword1");
-            if ((params.get("InputPassword1") != (params.get("InputPassword2")))){
+            u.username = username;
+            u.email = email;
+            u.password = password1;
+            if (!password1.equals(password2)) {
                 renderText("Las contraseñas no coinciden");
-                return ;
+                return;
             }
             u.save();
             renderText("Usuario registrado");

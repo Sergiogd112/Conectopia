@@ -5,24 +5,24 @@
         <div class="card-body">
             <form onsubmit="/register" method="post">
                 <div class="mb-3">
-                    <label for="InputUname" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="InputUname" aria-describedby="Username">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="Username" name="username">
                 </div>
                 <div class="mb-3">
-                    <label for="InputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="InputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="InputPassword1"
-                           oninput="checkPasswordMatch()">
+                    <label for="password1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password1"
+                           oninput="checkPasswordMatch()" name="password1">
 
                 </div>
                 <div class="mb-3">
-                    <label for="InputPassword2" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="InputPassword2"
-                           oninput="checkPasswordMatch()">
+                    <label for="password2" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="password2"
+                           oninput="checkPasswordMatch()" name="password2">
                     <span id="confirmPasswordTick" style="display: none; color: #67A927">&#10004;</span>
                     <span id="confirmPasswordCross" style="display: none; color: crimson">&#10060;</span>
                 </div>
