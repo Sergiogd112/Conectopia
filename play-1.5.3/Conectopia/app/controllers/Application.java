@@ -20,16 +20,20 @@ public class Application extends Controller {
 
     public static void loginPost(String emailuname, String password) {
         // check if emailUname is email or username if it contains @ then it is email
+        // print evrything
+        System.out.println("emailuname: " + emailuname);
+        System.out.println("password: " + password);
         if (emailuname.contains("@")) {
             User u = User.find("byEmail", emailuname).first();
-            if (u == null || u.password != password) {
+            if (u == null || !Objects.equals(u.password, password)) {
                 renderText("Usuario no encontrado");
             } else {
                 renderText("Usuario encontrado");
             }
         } else {
             User u = User.find("byUsername", emailuname).first();
-            if (u == null || u.password != password) {
+            System.out.println("u: " + u.username);
+            if (u == null || !(u.password.equals(password))) {
                 renderText("Usuario no encontrado");
             } else {
                 renderText("Usuario encontrado");
