@@ -1,6 +1,5 @@
 package controllers;
 
-import play.*;
 import play.mvc.*;
 
 import java.util.*;
@@ -8,14 +7,33 @@ import java.util.*;
 import models.*;
 
 public class Application extends Controller {
-
+    @Before
+    static void addUser() {
+        User user = connected();
+        if(user != null) {
+            renderArgs.put("user", user);
+        }
+    }
+    static User connected() {
+        if(renderArgs.get("user") != null) {
+            return renderArgs.get("user", User.class);
+        }
+        String username = session.get("user");
+        if(username != null) {
+            return User.find("byUsername", username).first();
+        }
+        return null;
+    }
     public static void index() {
-        render("Application/index.html");
+        if (connected() != null) {
+            User u = connected();
+        }
+        renderTemplate("Application/index.html");
     }
 
     public static void login() {
 
-        render("Application/login.html");
+        render("../views/Application/login.html");
     }
 
     public static void loginPost(String emailuname, String password) {
@@ -28,6 +46,7 @@ public class Application extends Controller {
             if (u == null || !Objects.equals(u.password, password)) {
                 renderText("Usuario no encontrado");
             } else {
+                session.put("user", u.username);
                 renderText("Usuario encontrado");
             }
         } else {
@@ -36,14 +55,16 @@ public class Application extends Controller {
             if (u == null || !(u.password.equals(password))) {
                 renderText("Usuario no encontrado");
             } else {
+                session.put("user", u.username);
                 renderText("Usuario encontrado");
+
             }
         }
     }
 
     public static void register() {
 
-        render("Application/register.html");
+        render("../views/Application/register.html");
     }
 
     public static void registerPost(String username, String email, String password1, String password2) {
@@ -83,5 +104,9 @@ public class Application extends Controller {
         }
         renderText(serverNames);
 
+    }
+    public static void logout() {
+        session.clear();
+        index();
     }
 }
