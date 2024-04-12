@@ -14,7 +14,7 @@ public class Application extends Controller {
             renderArgs.put("user", user);
         }
     }
-    static User connected() {
+    public static User connected() {
         if(renderArgs.get("user") != null) {
             return renderArgs.get("user", User.class);
         }
@@ -26,7 +26,7 @@ public class Application extends Controller {
     }
     public static void index() {
         if (connected() != null) {
-            User u = connected();
+            Dashboard.index();
         }
         renderTemplate("Application/index.html");
     }
@@ -85,7 +85,8 @@ public class Application extends Controller {
                 return;
             }
             u.save();
-            renderText("Usuario registrado");
+            session.put("user", u.username);
+            Dashboard.index();
         } else {
             renderText("Usuario ya existe");
         }

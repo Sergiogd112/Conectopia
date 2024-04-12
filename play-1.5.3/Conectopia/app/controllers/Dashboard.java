@@ -6,7 +6,7 @@ import java.util.*;
 
 import models.*;
 
-public class Dashboard extends Controller{
+public class Dashboard extends Application{
     @Before
     static void checkUser() {
         if(connected() == null) {
@@ -14,6 +14,7 @@ public class Dashboard extends Controller{
             Application.index();
         }
     }
+
     public static void index() {
         User user = connected();
         render(user);
