@@ -22,7 +22,7 @@ GET     /dashboard/servers                      Dashboard.servers
 GET     /dashboard/servers.html                 Dashboard.servers
 GET     /dashboard/server/{id}                  Dashboard.server
 GET     /dashboard/server/{id}.html             Dashboard.server
-
+POST    /dashboard/servers                      Dashboard.serverPost
 
 
 # Ignore favicon requests
@@ -32,4 +32,4 @@ GET     /favicon.ico                            404
 GET     /public/                                staticDir:public
 
 # Catch all
-*       /{controller}/{action}                  {controller}.{action}
+#*       /{controller}/{action}                  {controller}.{action}

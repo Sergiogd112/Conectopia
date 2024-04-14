@@ -1,4 +1,7 @@
 #{extends 'main.html' /}
-#{set title:'Server' /}
+#{set title:serverName /}
 #{set user:user /}
-<h1>#{get server.name}</h1>
+<h1>${server.name}</h1>
+<p>
+    ${server.description}
+</p>
