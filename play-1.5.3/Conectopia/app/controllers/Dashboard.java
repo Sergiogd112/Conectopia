@@ -19,4 +19,8 @@ public class Dashboard extends Application{
         User user = connected();
         render(user);
     }
+    public static void servers() {
+        User user = connected();
+        render(user);
+    }
 }

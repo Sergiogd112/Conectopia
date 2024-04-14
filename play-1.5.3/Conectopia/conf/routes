@@ -15,6 +15,15 @@ POST    /register                               Application.registerPost
 GET     /logout                                 Application.logout
 GET     /ServerByUser                           Application.ServerByUser
 
+GET     /dashboard                              Dashboard.index
+GET     /dashboard/index                        Dashboard.index
+GET     /dashboard/index.html                   Dashboard.index
+GET     /dashboard/servers                      Dashboard.servers
+GET     /dashboard/servers.html                 Dashboard.servers
+GET     /dashboard/server/{id}                  Dashboard.server
+GET     /dashboard/server/{id}.html             Dashboard.server
+
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
