@@ -22,7 +22,8 @@ GET     /dashboard/servers                      Dashboard.servers
 GET     /dashboard/servers.html                 Dashboard.servers
 GET     /dashboard/server/{id}                  Dashboard.server
 GET     /dashboard/server/{id}.html             Dashboard.server
-POST    /dashboard/servers                      Dashboard.serverPost
+POST    /dashboard/server                       Dashboard.serverPost
+PUT     /dashboard/server/{id}                  Dashboard.serverPut
 
 
 # Ignore favicon requests
