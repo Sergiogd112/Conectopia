@@ -161,10 +161,29 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/tmp/classes" />
   </component>
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Run Windows" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value=" $env:JAVA_HOME=&quot;C:\Program Files (x86)\Java\jre-1.8&quot;; .\play.bat run conectopia" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="powershell.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhos:9000" />
+      </method>
+    </configuration>
+  </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
   </component>
-  <component name="dataSourceStorageLocal" created-in="IU-241.14494.240">
+  <component name="dataSourceStorageLocal" created-in="IU-233.14475.28">
     <data-source name="play" uuid="c14dd7cc-4f67-4db3-bed1-4839718331a7">
       <database-info product="H2" version="2.2.220 (2023-07-04)" jdbc-version="4.2" driver-name="H2 JDBC Driver" driver-version="2.2.220 (2023-07-04)" dbms="H2" exact-version="2.2.220" exact-driver-version="2.2">
         <identifier-quote-string>&quot;</identifier-quote-string>

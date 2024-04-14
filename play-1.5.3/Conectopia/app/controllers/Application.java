@@ -106,6 +106,10 @@ public class Application extends Controller {
         renderText(serverNames);
 
     }
+    public static void about() {
+        int a=1;
+        renderTemplate("Application/about.html");
+    }
     public static void logout() {
         session.clear();
         index();
