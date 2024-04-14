@@ -10,20 +10,22 @@ public class Application extends Controller {
     @Before
     static void addUser() {
         User user = connected();
-        if(user != null) {
+        if (user != null) {
             renderArgs.put("user", user);
         }
     }
+
     public static User connected() {
-        if(renderArgs.get("user") != null) {
+        if (renderArgs.get("user") != null) {
             return renderArgs.get("user", User.class);
         }
         String username = session.get("user");
-        if(username != null) {
+        if (username != null) {
             return User.find("byUsername", username).first();
         }
         return null;
     }
+
     public static void index() {
         if (connected() != null) {
             Dashboard.index();
@@ -44,19 +46,21 @@ public class Application extends Controller {
         if (emailuname.contains("@")) {
             User u = User.find("byEmail", emailuname).first();
             if (u == null || !Objects.equals(u.password, password)) {
-                renderText("Usuario no encontrado");
+                flash("error", "Usuario o contraseña incorrectos");
+                Application.login();
             } else {
                 session.put("user", u.username);
-                renderText("Usuario encontrado");
+                Dashboard.index();
             }
         } else {
             User u = User.find("byUsername", emailuname).first();
-            System.out.println("u: " + u.username);
             if (u == null || !(u.password.equals(password))) {
-                renderText("Usuario no encontrado");
+                flash("error", "Usuario o contraseña incorrectos");
+                Application.login();
             } else {
+                System.out.println("u: " + u.username);
                 session.put("user", u.username);
-                renderText("Usuario encontrado");
+                Dashboard.index();
 
             }
         }
@@ -88,7 +92,8 @@ public class Application extends Controller {
             session.put("user", u.username);
             Dashboard.index();
         } else {
-            renderText("Usuario ya existe");
+            flash("error", "El usuario ya existe");
+            Application.login();
         }
         render();
     }
@@ -106,10 +111,12 @@ public class Application extends Controller {
         renderText(serverNames);
 
     }
+
     public static void about() {
-        int a=1;
+        int a = 1;
         renderTemplate("Application/about.html");
     }
+
     public static void logout() {
         session.clear();
         index();
