@@ -28,4 +28,8 @@ public class Message extends Model {
         this.chat = null;
         this.created = new Date();
     }
+
+    public String relativeTime() {
+        return helpers.TimeAgo.toRelative(this.created, new Date());
+    }
 }
