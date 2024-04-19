@@ -31,6 +31,8 @@ POST    /register                               Application.registerPost
 # GET request to retrieve the server by user
 GET     /ServerByUser                           Application.ServerByUser
 
+GET     /search/user                            Search.user
+
 # Dashboard Routes
 # The dashboard are only accessible to authenticated users
 
