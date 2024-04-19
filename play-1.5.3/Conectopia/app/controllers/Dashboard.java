@@ -16,6 +16,7 @@ public class Dashboard extends Application {
             Application.index();
         }
     }
+
     @Before
     static void logparams() {
         StringBuilder sb = new StringBuilder();
@@ -28,25 +29,25 @@ public class Dashboard extends Application {
 
     public static void index() {
         User user = connected();
-        render( user);
+        render(user);
     }
 
     public static void servers() {
         User user = connected();
 
-        render( user);
+        render(user);
     }
 
     public static void server(Long idServer) {
         User user = connected();
 
-        assert  user!= null;
+        assert user != null;
         if (idServer == null) {
             flash.error("Server ID is required");
             Dashboard.servers();
         } else {
             Server server_res = Server.findById(idServer);
-            Logger.debug("Server ID: " + idServer+" Server: "+server_res.name);
+            Logger.debug("Server ID: " + idServer + " Server: " + server_res.name);
             if (server_res == null) {
                 flash.error("Server not found");
                 Dashboard.servers();
@@ -69,7 +70,7 @@ public class Dashboard extends Application {
     public static void serverPost(String serverName, String serverDescription) {
         User user = connected();
 
-        assert  user!= null;
+        assert user != null;
         Role role = new Role();
         Member member = new Member();
         Server newserver = new Server();
@@ -100,7 +101,7 @@ public class Dashboard extends Application {
     public static void serverPut(Long idServer, String serverName, String serverDescription) {
         User user = connected();
 
-        assert  user!= null;
+        assert user != null;
         Server server = Server.findById(idServer);
         if (server == null) {
             flash.error("Server not found");
@@ -120,7 +121,7 @@ public class Dashboard extends Application {
     public static void serverDelete(Long idServer) {
         User user = connected();
 
-        assert  user!= null;
+        assert user != null;
         Server server = Server.findById(idServer);
         if (server == null) {
             flash.error("Server not found");
@@ -129,7 +130,7 @@ public class Dashboard extends Application {
         // check if the user is the owner of the server
         assert server != null;
 
-        if (server.DeleteServer(  user)) {
+        if (server.DeleteServer(user)) {
             flash.success("Server deleted");
         } else {
             flash.error("You are not the owner of the server");
@@ -141,7 +142,7 @@ public class Dashboard extends Application {
         User user = connected();
 
         System.out.println("Server ID: " + idServer);
-        assert  user!= null;
+        assert user != null;
         Server server = Server.findById(idServer);
         if (server == null) {
             flash.error("Server not found");
@@ -151,12 +152,12 @@ public class Dashboard extends Application {
         assert server != null;
         renderArgs.put("server", server);
         // TODO: view for server members
-        render(  user);
+        render(user);
     }
 
     public static void serverMembersPost(Long idServer, String username, String roleName) {
         User user = connected();
-        assert   user != null;
+        assert user != null;
         Server server = Server.findById(idServer);
         if (server == null) {
             flash.error("Server not found");
@@ -184,7 +185,7 @@ public class Dashboard extends Application {
 
     public static void serverChatPost(Long idServer, String chatName, String chatDescription) {
         User user = connected();
-        assert   user != null;
+        assert user != null;
         Server server = Server.findById(idServer);
         if (server == null) {
             flash.error("Server not found");
@@ -197,9 +198,10 @@ public class Dashboard extends Application {
         chat.save();
         Dashboard.server(server.id);
     }
+
     public static void serverChat(Long idServer, Long idChat) {
         User user = connected();
-        assert   user != null;
+        assert user != null;
         Server server = Server.findById(idServer);
         if (server == null) {
             flash.error("Server not found");
@@ -218,4 +220,28 @@ public class Dashboard extends Application {
         renderTemplate("Dashboard/chat.html");
     }
 
+    public static void serverChatMessagePost(Long idServer, Long idChat, String messageContent) {
+        User user = connected();
+        assert user != null;
+        Server server = Server.findById(idServer);
+        if (server == null) {
+            flash.error("Server not found");
+            Dashboard.servers();
+        }
+        // check if the user is the owner of the server
+        assert server != null;
+        Chat chat = Chat.findById(idChat);
+        if (chat == null) {
+            flash.error("Chat not found");
+            Dashboard.server(server.id);
+        }
+        Message newMessage = new Message(messageContent, user, chat);
+
+        chat.messages.add(newMessage);
+        user.messages.add(newMessage);
+        chat.save();
+        user.save();
+        newMessage.save();
+        Dashboard.serverChat(server.id, chat.id);
+    }
 }

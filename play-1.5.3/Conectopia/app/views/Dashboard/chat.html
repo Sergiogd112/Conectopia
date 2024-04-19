@@ -5,6 +5,10 @@
 <p>
 ${server.description}
 </p>
+<h2>${chat.name}</h2>
+<p>
+${chat.description}
+</p>
 #{if user}
 <div id="chat-list">
     #{list chat.messages, as:'message'}
@@ -16,7 +20,7 @@ ${server.description}
                 ${message.content}
             </div>
             <div class="card-footer text-body-secondary">
-                ${message.relativeTime()}
+                <span>${message.relativeTime()}</span> <span class="float-end" style="color: ${message.user.getRole(server).color};">${message.user.getRole(server).name}</span>
             </div>
         </div>
     #{/list}
