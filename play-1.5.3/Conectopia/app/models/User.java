@@ -33,5 +33,14 @@ public class User extends Model {
         this.created = new Date();
     }
 
+    public Role getRole(Server server) {
+        for (Member member : members) {
+            if (member.server.equals(server)) {
+                return member.role;
+            }
+        }
+        return null;
+    }
+
 
 }
