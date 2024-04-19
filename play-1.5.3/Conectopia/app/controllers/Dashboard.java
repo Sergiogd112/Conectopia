@@ -53,7 +53,15 @@ public class Dashboard extends Application {
             assert server_res != null;
 
             renderArgs.put("server", server_res);
-            render( user);
+//            Role role = user.getRole(server_res);
+//            if (role == null) {
+//                flash.error("You are not a member of this server");
+//                Dashboard.servers();
+//            }
+//            assert role != null;
+//            List<Chat> chats = Chat.find("byServerAndRole", server_res,role).fetch();
+            renderArgs.put("chats", server_res.chats);
+            render(user);
         }
     }
 
@@ -171,6 +179,22 @@ public class Dashboard extends Application {
             flash.error("You are not the owner of the server");
         }
         Dashboard.serverMembers(server.id);
+    }
+
+    public static void serverChatPost(Long idServer, String chatName, String chatDescription) {
+        User user = connected();
+        assert   user != null;
+        Server server = Server.findById(idServer);
+        if (server == null) {
+            flash.error("Server not found");
+            Dashboard.servers();
+        }
+        // check if the user is the owner of the server
+        assert server != null;
+        Chat chat = new Chat(chatName, chatDescription);
+        chat.server = server;
+        chat.save();
+        Dashboard.server(server.id);
     }
 
 }

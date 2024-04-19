@@ -5,3 +5,35 @@
 <p>
     ${server.description}
 </p>
+
+<form id="createServerForm" action="/dashboard/server/${server.id}/chat" style="display: none;" method="post">
+    <div class="mb-3">
+        <label class="form-label" for="chatName" >Chat name</label>
+        <input class="form-control" id="chatName" type="text" name="chatName">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="chatDescription">Description</label>
+        <textarea class="form-control" id="chatDescription" rows="3" name="chatDescription"></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Create</button>
+</form>
+<button class="btn btn-primary" id="createButton" onclick="createForm()" type="button">Create chat</button>
+
+
+#{if user}
+<div id="chat-list">
+    #{list chats, as:'chat'}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">${chat.name}</h5>
+                <p class="card-text">
+                ${chat.description}
+                </p>
+                <a class="btn btn-primary" href="/dashboard/server/${chat.id}">Go to ${chat.name}</a>
+            </div>
+        </div>
+    #{/list}
+</div>
+#{/if}
+<script src="@{'/public/javascripts/servers.js'}"></script>
