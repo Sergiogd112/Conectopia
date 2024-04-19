@@ -18,6 +18,8 @@ public class User extends Model {
     public List<Badge> badges = new ArrayList<>();
     @OneToMany(mappedBy = "user")
     public List<Member> members = new ArrayList<>();
+    @OneToMany(mappedBy = "user")
+    public List<Message> messages = new ArrayList<>();
 
     public User(String username, String email, String password) {
         this.username = username;
