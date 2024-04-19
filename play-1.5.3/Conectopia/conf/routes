@@ -1,29 +1,141 @@
-# Routes
-# This file defines all application routes (Higher priority routes first)
-# ~~~~
+# Application Routes
 
-# Home page
+# GET request to the home page
 GET     /                                       Application.index
+
+# GET request to the index page
 GET     /index                                  Application.index
+
+# GET request to the index page (HTML format)
 GET     /index.html                             Application.index
+
+# GET request to the about page
 GET     /about                                  Application.about
 
+# User Authentication Routes
+
+# GET request to the login page
 GET     /login                                  Application.login
+
+# GET request to the registration page
 GET     /register                               Application.register
+
+# POST request to authenticate the user and log them in
 POST    /login                                  Application.loginPost
+
+# POST request to register a new user
 POST    /register                               Application.registerPost
-GET     /logout                                 Application.logout
+
+# Server Routes
+
+# GET request to retrieve the server by user
 GET     /ServerByUser                           Application.ServerByUser
 
+# Dashboard Routes
+# The dashboard are only accessible to authenticated users
+
+# GET request to the dashboard home page
 GET     /dashboard                              Dashboard.index
+
+# GET request to the dashboard index page
 GET     /dashboard/index                        Dashboard.index
+
+# GET request to the dashboard index page (HTML format)
 GET     /dashboard/index.html                   Dashboard.index
+
+# GET request to the dashboard servers page
 GET     /dashboard/servers                      Dashboard.servers
+
+# GET request to the dashboard servers page (HTML format)
 GET     /dashboard/servers.html                 Dashboard.servers
+
+# GET request to a specific server page on the dashboard
+# The {id} in the URL is a placeholder for the server ID
 GET     /dashboard/server/{id}                  Dashboard.server
+
+# GET request to a specific server page on the dashboard (HTML format)
+# The {id} in the URL is a placeholder for the server ID
 GET     /dashboard/server/{id}.html             Dashboard.server
+
+# POST request to create a new server on the dashboard
 POST    /dashboard/server                       Dashboard.serverPost
+
+# PUT request to update a specific server on the dashboard
+# The {id} in the URL is a placeholder for the server ID
+PUT     /dashboard/server/{id}                  Dashboard.serverPut# Dashboard Routes
+
+# GET request to the dashboard home page
+GET     /dashboard                              Dashboard.index
+
+# GET request to the dashboard index page
+GET     /dashboard/index                        Dashboard.index
+
+# GET request to the dashboard index page (HTML format)
+GET     /dashboard/index.html                   Dashboard.index
+
+# GET request to the dashboard servers page
+GET     /dashboard/servers                      Dashboard.servers
+
+# GET request to the dashboard servers page (HTML format)
+GET     /dashboard/servers.html                 Dashboard.servers
+
+# GET request to a specific server page on the dashboard
+# The {id} in the URL is a placeholder for the server ID
+# It displays the server details and a list of chats
+GET     /dashboard/server/{id}                  Dashboard.server
+
+# GET request to a specific server page on the dashboard (HTML format)
+# The {id} in the URL is a placeholder for the server ID
+# It displays the server details and a list of chats
+
+GET     /dashboard/server/{id}.html             Dashboard.server
+
+# POST request to create a new server on the dashboard
+POST    /dashboard/server                       Dashboard.serverPost
+
+# PUT request to update a specific server on the dashboard
+# The {id} in the URL is a placeholder for the server ID
 PUT     /dashboard/server/{id}                  Dashboard.serverPut
+
+# POST request to create a new chat on a server
+POST    /dashboard/server/chat                  Dashboard.serverChatPost
+
+# GET request to a specific chat page on a server
+# The {id} in the URL is a placeholder for the chat ID
+GET     /dashboard/server/chat/{id}             Dashboard.serverChat
+
+# GET request to a specific chat page on a server (HTML format)
+# The {id} in the URL is a placeholder for the chat ID
+GET     /dashboard/server/chat/{id}.html        Dashboard.serverChat
+
+# POST request to create a new message on a chat
+POST    /dashboard/server/chat/{id}/message          Dashboard.serverChatMessagePost
+
+# GET request to a specific message page on a chat
+# The {idchat} in the URL is a placeholder for the chat ID
+# The {idmessage} in the URL is a placeholder for the message ID
+GET     /dashboard/server/chat/{idchat}/message/{idmessage}     Dashboard.serverChatMessage
+
+# GET request to a specific message page on a chat (HTML format)
+# The {idchat} in the URL is a placeholder for the chat ID
+# The {idmessage} in the URL is a placeholder for the message ID
+GET     /dashboard/server/chat/{idchat}/message/{idmessage}.html    Dashboard.serverChatMessage
+
+# GET request to retrieve the roles of a specific server on the dashboard
+# The {id} in the URL is a placeholder for the server ID
+GET     /dashboard/server/{id}/roles            Dashboard.serverRoles
+
+# POST request to create a new role on a specific server on the dashboard
+# The {id} in the URL is a placeholder for the server ID
+POST    /dashboard/server/{id}/role             Dashboard.serverRolePost
+
+# GET request to retrieve all badges on the dashboard
+GET     /dashboard/badges                      Dashboard.badges
+
+# POST request to create a new badge on the dashboard
+POST    /dashboard/badge                       Dashboard.badgePost
+
+
 
 
 # Ignore favicon requests
