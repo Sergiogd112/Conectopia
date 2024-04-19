@@ -61,7 +61,11 @@ public class Server extends Model {
         for (Role role : roles) {
             role.delete();
         }
+
         for (Chat chat : chats) {
+            for (Message message : chat.messages) {
+                message.delete();
+            }
             chat.delete();
         }
         this.delete();
@@ -78,6 +82,14 @@ public class Server extends Model {
         member.server = this;
         member.save();
         return true;
+    }
+    public Member getOwner() {
+        for (Member member : members) {
+            if (member.role.name.equals("Owner")) {
+                return member;
+            }
+        }
+        return null;
     }
 
 }
