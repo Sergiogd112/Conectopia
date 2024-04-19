@@ -1,5 +1,6 @@
 package controllers;
 
+import play.Logger;
 import play.mvc.*;
 
 import java.util.*;
@@ -14,7 +15,14 @@ public class Application extends Controller {
             renderArgs.put("user", user);
         }
     }
-
+    @Before
+    static void logparams() {
+        StringBuilder sb = new StringBuilder();
+        for (Map.Entry<String, String[]> entry : params.all().entrySet()) {
+            sb.append(entry.getKey()).append(": ").append(Arrays.toString(entry.getValue())).append("|");
+        }
+        Logger.debug(sb.toString());
+    }
     public static User connected() {
         if (renderArgs.get("user") != null) {
             return renderArgs.get("user", User.class);

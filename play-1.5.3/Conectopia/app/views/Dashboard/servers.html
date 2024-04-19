@@ -22,11 +22,11 @@
     #{list user.members, as:'member'}
     <div class="card" style="width: 18rem;">
         <div class="card-body">
-            <h5 class="card-title">#{get 'member.server.name' /}</h5>
+            <h5 class="card-title">${member.server.name}</h5>
             <p class="card-text">
-                #{get 'member.server.description' /}
+                ${member.server.description}
             </p>
-            <a class="btn btn-primary" href="#">Go somewhere</a>
+            <a class="btn btn-primary" href="/dashboard/server/${member.server.id}">Go to ${member.server.name}</a>
         </div>
     </div>
     #{/list}

@@ -51,18 +51,18 @@ GET     /dashboard/servers.html                 Dashboard.servers
 
 # GET request to a specific server page on the dashboard
 # The {id} in the URL is a placeholder for the server ID
-GET     /dashboard/server/{id}                  Dashboard.server
+GET     /dashboard/server/{idServer}                  Dashboard.server
 
 # GET request to a specific server page on the dashboard (HTML format)
 # The {id} in the URL is a placeholder for the server ID
-GET     /dashboard/server/{id}.html             Dashboard.server
+GET     /dashboard/server/{idServer}.html             Dashboard.server
 
 # POST request to create a new server on the dashboard
 POST    /dashboard/server                       Dashboard.serverPost
 
 # PUT request to update a specific server on the dashboard
 # The {id} in the URL is a placeholder for the server ID
-PUT     /dashboard/server/{id}                  Dashboard.serverPut# Dashboard Routes
+PUT     /dashboard/server/{idServer}                  Dashboard.serverPut# Dashboard Routes
 
 # GET request to the dashboard home page
 GET     /dashboard                              Dashboard.index
@@ -80,61 +80,61 @@ GET     /dashboard/servers                      Dashboard.servers
 GET     /dashboard/servers.html                 Dashboard.servers
 
 # GET request to a specific server page on the dashboard
-# The {idserver} in the URL is a placeholder for the server ID
+# The {idServer} in the URL is a placeholder for the server ID
 # It displays the server details and a list of chats
-GET     /dashboard/server/{idserver}                  Dashboard.server
+GET     /dashboard/server/{idServer}                  Dashboard.server
 
 # GET request to a specific server page on the dashboard (HTML format)
-# The {idserver} in the URL is a placeholder for the server ID
+# The {idServer} in the URL is a placeholder for the server ID
 # It displays the server details and a list of chats
 
-GET     /dashboard/server/{idserver}.html             Dashboard.server
+GET     /dashboard/server/{idServer}.html             Dashboard.server
 
 # POST request to create a new server on the dashboard
 POST    /dashboard/server                       Dashboard.serverPost
 
 # PUT request to update a specific server on the dashboard
-# The {idserver} in the URL is a placeholder for the server ID
-PUT     /dashboard/server/{idserver}                  Dashboard.serverPut
+# The {idServer} in the URL is a placeholder for the server ID
+PUT     /dashboard/server/{idServer}                  Dashboard.serverPut
 
 # POST request to create a new chat on a server
-# The {idserver} in the URL is a placeholder for the server ID
-POST    /dashboard/server/{idserver}/chat                  Dashboard.serverChatPost
+# The {idServer} in the URL is a placeholder for the server ID
+POST    /dashboard/server/{idServer}/chat                  Dashboard.serverChatPost
 
 # GET request to a specific chat page on a server
-# The {idserver} in the URL is a placeholder for the server ID
+# The {idServer} in the URL is a placeholder for the server ID
 # The {idchat} in the URL is a placeholder for the chat ID
-GET     /dashboard/server/{idserver}/chat/{idchat}             Dashboard.serverChat
+GET     /dashboard/server/{idServer}/chat/{idchat}             Dashboard.serverChat
 
 # GET request to a specific chat page on a server (HTML format)
-# The {idserver} in the URL is a placeholder for the server ID
+# The {idServer} in the URL is a placeholder for the server ID
 # The {idchat} in the URL is a placeholder for the chat ID
-GET     /dashboard/server/{idserver}/chat/{idchat}.html        Dashboard.serverChat
+GET     /dashboard/server/{idServer}/chat/{idchat}.html        Dashboard.serverChat
 
 # POST request to create a new message on a chat
-# The {idserver} in the URL is a placeholder for the server ID
+# The {idServer} in the URL is a placeholder for the server ID
 # The {idchat} in the URL is a placeholder for the chat ID
-POST    /dashboard/server/{idserver}/chat/{idchat}/message          Dashboard.serverChatMessagePost
+POST    /dashboard/server/{idServer}/chat/{idchat}/message          Dashboard.serverChatMessagePost
 
 # GET request to a specific message page on a chat
-# The {idserver} in the URL is a placeholder for the server ID
+# The {idServer} in the URL is a placeholder for the server ID
 # The {idchat} in the URL is a placeholder for the chat ID
 # The {idmessage} in the URL is a placeholder for the message ID
-GET     /dashboard/server/{idserver}/chat/{idchat}/message/{idmessage}     Dashboard.serverChatMessage
+GET     /dashboard/server/{idServer}/chat/{idchat}/message/{idmessage}     Dashboard.serverChatMessage
 
 # GET request to a specific message page on a chat (HTML format)
-# The {idserver} in the URL is a placeholder for the server ID
+# The {idServer} in the URL is a placeholder for the server ID
 # The {idchat} in the URL is a placeholder for the chat ID
 # The {idmessage} in the URL is a placeholder for the message ID
-GET     /dashboard/server/{idserver}/chat/{idchat}/message/{idmessage}.html    Dashboard.serverChatMessage
+GET     /dashboard/server/{idServer}/chat/{idchat}/message/{idmessage}.html    Dashboard.serverChatMessage
 
 # GET request to retrieve the roles of a specific server on the dashboard
-# The {idserver} in the URL is a placeholder for the server ID
-GET     /dashboard/server/{idserver}/roles            Dashboard.serverRoles
+# The {idServer} in the URL is a placeholder for the server ID
+GET     /dashboard/server/{idServer}/roles            Dashboard.serverRoles
 
 # POST request to create a new role on a specific server on the dashboard
-# The {idserver} in the URL is a placeholder for the server ID
-POST    /dashboard/server/{idserver}/role             Dashboard.serverRolePost
+# The {idServer} in the URL is a placeholder for the server ID
+POST    /dashboard/server/{idServer}/role             Dashboard.serverRolePost
 
 # GET request to retrieve all badges on the dashboard
 GET     /dashboard/badges                      Dashboard.badges
