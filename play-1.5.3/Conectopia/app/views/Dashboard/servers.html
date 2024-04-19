@@ -4,7 +4,7 @@
 <h1>Servers</h1>
 <form id="createServerForm" action="/dashboard/server" style="display: none;" method="post">
     <div class="mb-3">
-        <label class="form-label" for="serverName" >Server name</label>
+        <label class="form-label" for="serverName">Server name</label>
         <input class="form-control" id="serverName" type="text" name="serverName">
     </div>
     <div class="mb-3">
@@ -16,20 +16,27 @@
 </form>
 <button class="btn btn-primary" id="createButton" onclick="createForm()" type="button">Create server</button>
 
+<hr>
 
 #{if user}
-<div id="server-list">
-    #{list user.members, as:'member'}
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">${member.server.name}</h5>
-            <p class="card-text">
-                ${member.server.description}
-            </p>
-            <a class="btn btn-primary" href="/dashboard/server/${member.server.id}">Go to ${member.server.name}</a>
-        </div>
+<div id="server-list" class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        #{list user.members, as:'member'}
+            <div class="card">
+                <div class="card-header" style="width: 100%;">
+                    <h5 class="card-title">${member.server.name}</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                    ${member.server.description}
+                    </p>
+                    <a class="btn btn-primary" href="/dashboard/server/${member.server.id}">Go
+                        to ${member.server.name}</a>
+                </div>
+            </div>
+        #{/list}
     </div>
-    #{/list}
+
 </div>
 #{/if}
 <script src="@{'/public/javascripts/servers.js'}"></script>

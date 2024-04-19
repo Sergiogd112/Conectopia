@@ -2,6 +2,7 @@ package controllers;
 
 import play.Logger;
 import play.mvc.*;
+import helpers.*;
 
 import java.util.*;
 
@@ -195,6 +196,26 @@ public class Dashboard extends Application {
         chat.server = server;
         chat.save();
         Dashboard.server(server.id);
+    }
+    public static void serverChat(Long idServer, Long idChat) {
+        User user = connected();
+        assert   user != null;
+        Server server = Server.findById(idServer);
+        if (server == null) {
+            flash.error("Server not found");
+            Dashboard.servers();
+        }
+        // check if the user is the owner of the server
+        assert server != null;
+        Chat chat = Chat.findById(idChat);
+        if (chat == null) {
+            flash.error("Chat not found");
+            Dashboard.server(server.id);
+        }
+        renderArgs.put("chat", chat);
+        renderArgs.put("server", server);
+        renderArgs.put("user", user);
+        renderTemplate("Dashboard/chat.html");
     }
 
 }

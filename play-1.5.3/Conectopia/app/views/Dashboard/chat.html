@@ -1,0 +1,32 @@
+#{extends 'main.html' /}
+#{set title:serverName /}
+#{set user:user /}
+<h1>${server.name}</h1>
+<p>
+${server.description}
+</p>
+#{if user}
+<div id="chat-list">
+    #{list chat.messages, as:'message'}
+        <div class="card" style="width: 80%">
+            <div class="card-header">
+                ${message.user.username}
+            </div>
+            <div class="card-body">
+                ${message.content}
+            </div>
+            <div class="card-footer text-body-secondary">
+                ${message.relativeTime()}
+            </div>
+        </div>
+    #{/list}
+</div>
+#{/if}
+<form id="createServerForm" action="/dashboard/server/${server.id}/chat/${chat.id}/message" method="post">
+    <div class="mb-3">
+        <label class="form-label" for="messageContent">Content</label>
+        <textarea class="form-control" id="messageContent" rows="3" name="messageContent"></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Post</button>
+</form>

@@ -3,12 +3,12 @@
 #{set user:user /}
 <h1>${server.name}</h1>
 <p>
-    ${server.description}
+${server.description}
 </p>
 
 <form id="createServerForm" action="/dashboard/server/${server.id}/chat" style="display: none;" method="post">
     <div class="mb-3">
-        <label class="form-label" for="chatName" >Chat name</label>
+        <label class="form-label" for="chatName">Chat name</label>
         <input class="form-control" id="chatName" type="text" name="chatName">
     </div>
     <div class="mb-3">
@@ -20,20 +20,26 @@
 </form>
 <button class="btn btn-primary" id="createButton" onclick="createForm()" type="button">Create chat</button>
 
+<hr>
 
 #{if user}
-<div id="chat-list">
-    #{list chats, as:'chat'}
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">${chat.name}</h5>
-                <p class="card-text">
-                ${chat.description}
-                </p>
-                <a class="btn btn-primary" href="/dashboard/server/${chat.id}">Go to ${chat.name}</a>
+<div id="chat-list" class="container">
+    <div class="row row-cols-4">
+        #{list chats, as:'chat'}
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                ${chat.name}
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                    ${chat.description}
+                    </p>
+                    <a class="btn btn-primary" href="/dashboard/server/${server.id}/chat/${chat.id}">Go
+                        to ${chat.name}</a>
+                </div>
             </div>
-        </div>
-    #{/list}
+        #{/list}
+    </div>
 </div>
 #{/if}
 <script src="@{'/public/javascripts/servers.js'}"></script>
