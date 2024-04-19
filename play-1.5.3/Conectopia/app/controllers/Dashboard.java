@@ -25,10 +25,10 @@ public class Dashboard extends Application {
         render(user);
     }
 
-    public static void server(Long id) {
+    public static void server(Long idserver) {
         User user = connected();
-        Server server_res = Server.findById(id);
-        System.out.println("Server ID: " + id);
+        Server server_res = Server.findById(idserver);
+        System.out.println("Server ID: " + idserver);
         System.out.println("Server Name: " + server_res.name);
         System.out.println("Server Description: " + server_res.description);
         renderArgs.put("server", server_res);
@@ -60,6 +60,7 @@ public class Dashboard extends Application {
         newserver.members.add(member);
         newserver.roles.add(role);
         role.members.add(member);
+        assert user != null;
         user.members.add(member);
 
         user.save();
@@ -69,4 +70,40 @@ public class Dashboard extends Application {
 
         Dashboard.server(newserver.id);
     }
+
+    public static void serverPut(Long idserver, String serverName, String serverDescription) {
+        System.out.println("Server ID: " + idserver);
+        System.out.println("Server Name: " + serverName);
+        System.out.println("Server Description: " + serverDescription);
+        User user = connected();
+        if (user == null) {
+            flash.error("Please log in first");
+            Application.index();
+        }
+        Server server = Server.findById(idserver);
+        if (server == null) {
+            flash.error("Server not found");
+            Dashboard.servers();
+        }
+        // check if the user is the owner of the server
+        boolean isOwner = false;
+        assert server != null;
+        assert user != null;
+        for (Member member : server.members) {
+            if (member.user.id == user.id && member.role.name.equals("Owner")) {
+                isOwner = true;
+                break;
+            }
+        }
+        if (!isOwner) {
+            flash.error("You are not the owner of this server");
+            Dashboard.server(server.id);
+        }
+        server.name = serverName;
+        server.description = serverDescription;
+        server.save();
+        Dashboard.server(server.id);
+    }
+
+
 }
