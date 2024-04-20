@@ -81,6 +81,12 @@ public class Server extends Model {
         member.role = role;
         member.server = this;
         member.save();
+
+        members.add(member);
+        user.members.add(member);
+
+        user.save();
+        this.save();
         return true;
     }
     public Member getOwner() {
@@ -90,6 +96,13 @@ public class Server extends Model {
             }
         }
         return null;
+    }
+    public List<User> getUsers() {
+        List<User> users = new ArrayList<>();
+        for (Member member : members) {
+            users.add(member.user);
+        }
+        return users;
     }
 
 }

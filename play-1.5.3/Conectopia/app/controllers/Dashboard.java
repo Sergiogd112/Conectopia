@@ -244,4 +244,31 @@ public class Dashboard extends Application {
         newMessage.save();
         Dashboard.serverChat(server.id, chat.id);
     }
+    public static void invitePost(Long userid, String servername){
+        User user = connected();
+        assert user != null;
+        assert userid != null;
+        User userToInvite = User.findById(userid);
+        if (userToInvite == null) {
+            flash.error("User not found");
+            Dashboard.servers();
+        }
+        Server server = Server.find("byName", servername).first();
+        if (server == null) {
+            flash.error("Server not found");
+            Dashboard.servers();
+        }
+        Role role =new Role();
+        role.name = "Member";
+        role.color = "blue";
+        role.save();
+        assert server != null;
+
+        if (server.addMember(user, userToInvite, role)) {
+            flash.success("User added to server");
+        } else {
+            flash.error("You are not the owner of the server");
+        }
+        Dashboard.server(server.id);
+    }
 }

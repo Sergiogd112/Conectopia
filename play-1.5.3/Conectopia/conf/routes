@@ -26,6 +26,9 @@ POST    /login                                  Application.loginPost
 # POST request to register a new user
 POST    /register                               Application.registerPost
 
+# GET request to log the user out
+GET     /logout                                 Application.logout
+
 # Server Routes
 
 # GET request to retrieve the server by user
@@ -98,6 +101,8 @@ POST    /dashboard/server                       Dashboard.serverPost
 # PUT request to update a specific server on the dashboard
 # The {idServer} in the URL is a placeholder for the server ID
 PUT     /dashboard/server/{idServer}                  Dashboard.serverPut
+
+POST    /dashboard/invite                       Dashboard.invitePost
 
 # POST request to create a new chat on a server
 # The {idServer} in the URL is a placeholder for the server ID
