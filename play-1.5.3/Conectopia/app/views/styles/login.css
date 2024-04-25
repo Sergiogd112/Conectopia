@@ -1,0 +1,66 @@
+body {
+    background-color: #afd0f8; /* Fondo principal */
+    font-family: 'Poppins', sans-serif; /* Fuente principal */
+}
+
+/* Contenedor principal */
+.d-flex {
+    height: 100vh; /* 100% del viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta de inicio de sesión */
+.card {
+    background-color: #ffffff; /* Fondo del contenedor del formulario */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px;
+    max-width: 400px;
+}
+
+/* Título del formulario */
+.card-title {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family:"Copperplate",fantasy;
+    color: #007bff;
+}
+
+/* Etiqueta del formulario */
+.form-label {
+    font-weight: bold;
+    color: #6faae5; /* Color del texto de la etiqueta */
+}
+
+/* Campo de entrada */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 5px;
+}
+
+/* Texto pequeño del formulario */
+.form-text {
+    font-size: 14px;
+    color: #888; /* Color del texto pequeño */
+}
+
+/* Botón de enviar */
+.btn-primary {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+}

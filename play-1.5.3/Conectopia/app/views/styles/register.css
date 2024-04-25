@@ -1,0 +1,51 @@
+
+body {
+    background-color: #f2f5f8; /* Fondo principal */
+    font-family: 'Poppins', sans-serif; /* Fuente principal */
+}
+.d-flex {
+    height: 100vh; /* 100% del viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: #ffffff; /* Fondo del contenedor del formulario */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px;
+    max-width: 400px;
+}
+.form-label {
+    font-weight: bold;
+    color: #555; /* Color del texto de la etiqueta */
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 5px;
+}
+.form-text {
+    font-size: 14px;
+    color: #888; /* Color del texto pequeño */
+}
+.btn-primary {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+}
+
+/* Marcado de confirmación de contraseña */
+#confirmPasswordTick,
+#confirmPasswordCross {
+    display: none; /* Ocultar inicialmente */
+}
