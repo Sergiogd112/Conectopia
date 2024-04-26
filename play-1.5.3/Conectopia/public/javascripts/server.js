@@ -1,6 +1,6 @@
 function fuzzyFindUser() {
     const search = document.getElementById('searchUser').value;
-    const url = '/search/user?query=' + search+'&excludeServer='+document.getElementById('serverName').textContent;
+    const url = '/search/user?query=' + search + '&excludeServer=' + document.getElementById('serverName').textContent;
     fetch(url)
         .then(function (response) {
             return response.json();
@@ -9,15 +9,32 @@ function fuzzyFindUser() {
             var result = '';
             console.log(data);
             for (const dataKey in data) {
-                result += '<button type="button" class="list-group-item list-group-item-action" onclick="sendInvite('+dataKey+',\''+
-                    data[dataKey]+'\')">'
-                    + data[dataKey] + '</button>';
+                result += '<button type="button" class="list-group-item list-group-item-action" onclick="sendInvite(' + dataKey + ',\'' + data[dataKey] + '\')">' + data[dataKey] + '</button>';
             }
             document.getElementById('searchResults').innerHTML = result;
         });
 }
 
-function sendInvite(userid,username) {
+function fuzzyFindMember() {
+    const search = document.getElementById('searchMember').value;
+    const url = '/search/member?query=' + search + '&ServerName=' + document.getElementById('serverName').textContent;
+    fetch(url)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            var result = '';
+            console.log(data);
+            for (const dataKey in data) {
+                result += '<div class="list-group list-group-item"> <span>' + data[dataKey] +
+                    '</span> <button type="button" class="btn btn-danger" onclick="removeUser(' +
+                    dataKey + ',\'' + data[dataKey] + '\')">Remove</button></div>';
+            }
+            document.getElementById('searchMemberResults').innerHTML = result;
+        });
+}
+
+function sendInvite(userid, username) {
     // pop up to confirm invite
     const confirm = window.confirm('Are you sure you want to invite ' + username + ' to this server?');
     if (!confirm) {
@@ -31,6 +48,28 @@ function sendInvite(userid,username) {
             'Content-Type': 'application/x-www-form-urlencoded'
         }, body: data
 
+    })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+        });
+
+}
+
+function removeUser(userid, username) {
+    // pop up to confirm invite
+    const confirm = window.confirm('Are you sure you want to remove ' + username + ' from this server?');
+    if (!confirm) {
+        return;
+    }
+    // use post request to send invite
+    const url = '/dashboard/server/' + document.getElementById('serverName').textContent + '/user/' + userid;
+    fetch(url, {
+        method: 'DELETE', headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
     })
         .then(function (response) {
             return response.json();

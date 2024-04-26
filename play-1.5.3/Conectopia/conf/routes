@@ -36,6 +36,8 @@ GET     /ServerByUser                           Application.ServerByUser
 
 GET     /search/user                            Search.user
 
+GET     /search/member                          Search.member
+
 # Dashboard Routes
 # The dashboard are only accessible to authenticated users
 
@@ -103,6 +105,8 @@ POST    /dashboard/server                       Dashboard.serverPost
 PUT     /dashboard/server/{idServer}                  Dashboard.serverPut
 
 POST    /dashboard/invite                       Dashboard.invitePost
+
+DELETE /dashboard/server/{idServer}/user/{idUser}  Dashboard.serverUserDelete
 
 # POST request to create a new chat on a server
 # The {idServer} in the URL is a placeholder for the server ID

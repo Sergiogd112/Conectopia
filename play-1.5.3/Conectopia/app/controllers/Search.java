@@ -38,5 +38,24 @@ public class Search extends Controller {
 
         renderJSON(userMap);
     }
+    public static void member(String query, String ServerName) {
+        if (query == null || ServerName == null || query.isEmpty() || ServerName.isEmpty()) {
+            renderJSON(new HashMap<>());
+            return;
+        }
+        // Fetch all members whose user.username matches the query and server.name
+        List<User> users = User.find("byUsernameLike", "%" + query + "%").fetch();
+        Server server = Server.find("byName", ServerName).first();
+        List<Member> members = Member.find("byServerAndUser", server, users).fetch();
+
+
+        // Generate a map of ids and usernames
+        Map<Long, String> userMap = new HashMap<>();
+        for (Member member: members) {
+            userMap.put(member.user.id, member.user.username);
+        }
+
+        renderJSON(userMap);
+    }
 
 }
