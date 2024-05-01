@@ -34,6 +34,7 @@ public class Application extends Controller {
         return null;
     }
 
+
     public static void index() {
         if (connected() != null) {
             Dashboard.index();

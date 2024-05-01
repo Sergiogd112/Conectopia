@@ -271,4 +271,15 @@ public class Dashboard extends Application {
         }
         Dashboard.server(server.id);
     }
+    public static void profile() {
+        User user = connected();
+        if (user != null) {
+
+            renderTemplate("views/Dashboard/ModificarPerfil.html");
+        } else {
+            // Redirige al usuario a la página de inicio de sesión si no está conectado
+            login();
+        }
+    }
+
 }
