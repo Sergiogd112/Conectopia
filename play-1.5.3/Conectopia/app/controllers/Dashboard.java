@@ -281,5 +281,21 @@ public class Dashboard extends Application {
             login();
         }
     }
+    public static void updateProfile(String newUsername, String confirmNewUsername, String newEmail, String confirmNewEmail, String newPassword, String confirmNewPassword) {
+        User user = connected();
+        if (user != null) {
+            if (newUsername != null && newUsername.equals(confirmNewUsername)) {
+                user.username = newUsername;
+            }
+            if (newEmail != null && newEmail.equals(confirmNewEmail)) {
+                user.email = newEmail;
+            }
+            if (newPassword != null && newPassword.equals(confirmNewPassword)) {
+                user.password = newPassword; // Asegúrate de encriptar la contraseña antes de guardarla
+            }
+            user.save();
+            index(); // Redirige al usuario a la página de inicio después de actualizar el perfil
+        }
+    }
 
 }
