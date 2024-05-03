@@ -275,7 +275,7 @@ public class Dashboard extends Application {
         User user = connected();
         if (user != null) {
 
-            renderTemplate("views/Dashboard/ModificarPerfil.html");
+            render();
         } else {
             // Redirige al usuario a la página de inicio de sesión si no está conectado
             login();
