@@ -157,7 +157,9 @@ POST    /dashboard/badge                       Dashboard.badgePost
 # The {idbadge} in the URL is a placeholder for the badge ID
 GET     /dashboard/badge/{idbadge}             Dashboard.badge
 
+GET     /dashboard/profile                     Dashboard.profile
 
+PUT    /dashboard/profile                     Dashboard.updateProfile
 
 
 # Ignore favicon requests
