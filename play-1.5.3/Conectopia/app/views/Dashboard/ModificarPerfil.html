@@ -1,0 +1,99 @@
+#{extends 'main.html' /}
+#{set title:'ModificarPerfil' /}
+
+*{@import play.i18n._}*
+*{@(username: String, email: String)}*
+
+<!--<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <style>
+        /* Estilos para la imagen de perfil redonda */
+        .profile-pic {
+            border-radius: 50%;
+            width: 230px;
+            height: 230px;
+            object-fit: cover;
+            float: left;
+        }
+        /* Estilos para el formulario */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        }
+        .profile,
+        .form-container {
+            width: 100%;
+        }
+        .profile-info {
+            margin-left: 170px; /* Añade margen a la izquierda para que no se superponga con la imagen */
+        }
+    </style>
+</head>-->
+<body>
+<div class="container">
+    <div class="profile">
+        <!-- Aquí puedes cambiar la URL de la imagen de perfil -->
+        <img src="https://api.dicebear.com/8.x/bottts/svg?seed=${user.username}" alt="Foto de perfil" class="profile-pic" style="width: 150px">
+        <div class="profile-info">
+            <!-- Aquí se mostrarán los datos del usuario -->
+            <p><strong>Nombre:</strong> ${user.username}</p> <!-- Muestra el nombre de usuario -->
+            <p><strong>Email:</strong> ${user.email}</p> <!-- Muestra el email del usuario -->
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Modificar Informacion</h2>
+        <form id="updateForm" action="#" method="post">
+            <input type="text" id="email" name="email" placeholder="Nuevo Email">
+            <input type="password" id="oldPassword" name="oldPassword" placeholder="Antigua Contraseña">
+            <input type="password" id="password" name="password" placeholder="Nueva Contraseña">
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar Contraseña">
+            <span id="passwordError" class="error"></span>
+            <input type="submit" value="Guardar Cambios">
+        </form>
+    </div>
+</div>
+
+<script>
+
+    document.getElementById('updateForm').addEventListener('submit', function(event) {
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+        var errorSpan = document.getElementById('passwordError');
+
+        if (password !== confirmPassword) {
+            alert('Las contraseñas no coinciden.'); // Muestra una alerta
+            event.preventDefault(); // Evita que se envíe el formulario
+        } else {
+            errorSpan.textContent = '';
+            errorMessageDiv.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
