@@ -1,9 +1,0 @@
-*.class
-*.log
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-conectopia/.metals/metals.lock.db
-conectopia/.metals/metals.mv.db
-play-1.5.3/Conectopia/Conectopia.iws
-*.pyc

@@ -1,0 +1,351 @@
+2024.03.14 20:31:19 INFO  Started: Metals version 1.2.2 in folders 'C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia' for client Visual Studio Code 1.87.2.
+20:31:20.201 [pool-1-thread-6] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+20:31:20.203 [pool-1-thread-6] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+20:31:20.203 [pool-1-thread-6] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+20:31:20.206 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+20:31:20.206 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e ...
+20:31:20.206 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+20:31:20.206 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+20:31:20.206 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e ...
+20:31:20.206 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Sergio%20Gomez%20Damas/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+20:31:20.210 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+20:31:20.210 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+20:31:20.210 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+20:31:20.210 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+20:31:20.210 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+20:31:20.210 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+20:31:20.215 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:31:20.215 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+20:31:20.216 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+20:31:20.216 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+20:31:20.216 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+20:31:20.292 [pool-1-thread-6] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\.metals\metals (H2 2.2)
+20:31:20.292 [pool-1-thread-6] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+20:31:20.292 [pool-1-thread-6] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+20:31:20.293 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+20:31:20.293 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+20:31:20.297 [pool-1-thread-6] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+20:31:20.298 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+20:31:20.298 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:31:20.304 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+20:31:20.307 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:31:20.314 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+20:31:20.314 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+20:31:20.314 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+20:31:20.314 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:31:20.314 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+20:31:20.315 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+20:31:20.315 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+20:31:20.315 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+20:31:20.315 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+20:31:20.315 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+20:31:20.316 [pool-1-thread-6] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+20:31:20.319 [pool-1-thread-6] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.014s)
+20:31:20.323 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+20:31:20.328 [pool-1-thread-6] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+20:31:20.330 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+20:31:20.338 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+20:31:20.339 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+20:31:20.340 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+20:31:20.343 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.343 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+20:31:20.345 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.345 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+20:31:20.350 [pool-1-thread-6] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+20:31:20.350 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+20:31:20.352 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+20:31:20.352 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+20:31:20.353 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+20:31:20.353 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+20:31:20.354 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+20:31:20.355 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+20:31:20.356 [pool-1-thread-6] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+20:31:20.356 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+20:31:20.357 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.358 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+20:31:20.359 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.359 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+20:31:20.359 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.359 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+20:31:20.360 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.360 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+20:31:20.361 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.361 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+20:31:20.363 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+20:31:20.367 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+20:31:20.368 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+20:31:20.368 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+20:31:20.369 [pool-1-thread-6] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+20:31:20.369 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+20:31:20.370 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.370 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+20:31:20.372 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+20:31:20.373 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+20:31:20.374 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+20:31:20.375 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+20:31:20.376 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+20:31:20.376 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+20:31:20.377 [pool-1-thread-6] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+20:31:20.377 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+20:31:20.383 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.384 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+20:31:20.388 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.388 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+20:31:20.389 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.389 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+20:31:20.390 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+20:31:20.393 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+20:31:20.394 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+20:31:20.394 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+20:31:20.395 [pool-1-thread-6] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+20:31:20.395 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+20:31:20.397 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+20:31:20.397 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+20:31:20.398 [pool-1-thread-6] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+20:31:20.405 [pool-1-thread-6] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.022s)
+20:31:20.414 [pool-1-thread-6] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 36 of 100M
+2024.03.14 20:31:29 INFO  no build target found for C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\app\models\Badges.scala. Using presentation compiler with project's scala-library version: 3.3.1
+mar 14, 2024 8:39:21 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30
+2024.03.14 20:41:11 WARN  Build server is not auto-connectable.
+2024.03.14 20:41:16 INFO  running 'C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\SERGIO~1\AppData\Local\Temp\metals1433837662772439671\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.14 20:41:18 INFO  [info] welcome to sbt 1.9.8 (Microsoft Java 21.0.2)
+2024.03.14 20:41:22 INFO  [info] loading settings for project conectopia-build-build-build from metals.sbt ...
+2024.03.14 20:41:23 INFO  [info] loading project definition from C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\project\project\project
+2024.03.14 20:41:25 INFO  [info] loading settings for project conectopia-build-build from metals.sbt ...
+2024.03.14 20:41:25 INFO  [info] loading project definition from C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\project\project
+2024.03.14 20:41:28 INFO  [success] Generated .bloop\conectopia-build-build.json
+2024.03.14 20:41:28 INFO  [success] Total time: 3 s, completed 14 mar 2024, 20:41:28
+2024.03.14 20:41:29 INFO  [info] loading settings for project conectopia-build from metals.sbt,plugins.sbt ...
+2024.03.14 20:41:29 INFO  [info] loading project definition from C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\project
+2024.03.14 20:41:32 INFO  [success] Generated .bloop\conectopia-build.json
+2024.03.14 20:41:32 INFO  [success] Total time: 3 s, completed 14 mar 2024, 20:41:32
+2024.03.14 20:41:35 INFO  [info] loading settings for project root from build.sbt ...
+2024.03.14 20:41:35 INFO  [info]   __              __
+2024.03.14 20:41:35 INFO  [info]   \ \     ____   / /____ _ __  __
+2024.03.14 20:41:35 INFO  [info]    \ \   / __ \ / // __ `// / / /
+2024.03.14 20:41:35 INFO  [info]    / /  / /_/ // // /_/ // /_/ /
+2024.03.14 20:41:35 INFO  [info]   /_/  / .___//_/ \__,_/ \__, /
+2024.03.14 20:41:35 INFO  [info]       /_/               /____/
+2024.03.14 20:41:35 INFO  [info] 
+2024.03.14 20:41:35 INFO  [info] Version 3.0.1 running Java 21.0.2
+2024.03.14 20:41:35 INFO  [info] 
+2024.03.14 20:41:35 INFO  [info] Play is run entirely by the community. Please consider contributing and/or donating:
+2024.03.14 20:41:35 INFO  [info] https://www.playframework.com/sponsors
+2024.03.14 20:41:35 INFO  [info] 
+2024.03.14 20:41:37 INFO  [success] Generated .bloop\root.json
+2024.03.14 20:41:37 INFO  [success] Generated .bloop\root-test.json
+2024.03.14 20:41:37 INFO  [success] Total time: 2 s, completed 14 mar 2024, 20:41:38
+2024.03.14 20:41:38 INFO  time: ran 'sbt bloopInstall' in 21s
+2024.03.14 20:41:38 INFO  Attempting to connect to the build server...
+2024.03.14 20:41:38 INFO  Bloop uses C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot defined at C:\Users\Sergio Gomez Damas\.bloop\bloop.json
+2024.03.14 20:41:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\.metals\bsp.trace.json or C:\Users\Sergio Gomez Damas\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.14 20:41:43 INFO  Attempting to connect to the build server...
+2024.03.14 20:41:43 INFO  Bloop uses C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot defined at C:\Users\Sergio Gomez Damas\.bloop\bloop.json
+2024.03.14 20:41:43 INFO  Attempting to connect to the build server...
+2024.03.14 20:41:43 INFO  Bloop uses C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot defined at C:\Users\Sergio Gomez Damas\.bloop\bloop.json
+2024.03.14 20:41:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\project\project\.metals\bsp.trace.json or C:\Users\Sergio Gomez Damas\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.14 20:41:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\project\.metals\bsp.trace.json or C:\Users\Sergio Gomez Damas\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.14 20:41:43 INFO  time: Connected to build server in 5.75s
+2024.03.14 20:41:43 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.14 20:41:43 INFO  time: Imported build in 0.22s
+2024.03.14 20:42:01 INFO  time: indexed workspace in 16s
+2024.03.14 20:46:31 INFO  compiling root (19 scala sources and 1 java source)
+mar 14, 2024 8:46:35 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 47
+2024.03.14 20:46:41 WARN  javac exited with exit code 1
+2024.03.14 20:46:41 INFO  time: compiled root in 10s
+2024.03.15 16:24:09 INFO  Started: Metals version 1.2.2 in folders 'C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia' for client Visual Studio Code 1.87.2.
+16:24:14.885 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+16:24:14.890 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+16:24:14.890 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+16:24:14.896 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+16:24:14.897 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e ...
+16:24:14.897 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+16:24:14.898 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+16:24:14.898 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e ...
+16:24:14.899 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Sergio%20Gomez%20Damas/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+16:24:14.909 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+16:24:14.909 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+16:24:14.909 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+16:24:14.909 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+16:24:14.910 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+16:24:14.910 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+16:24:14.919 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+16:24:14.920 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+16:24:14.921 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+16:24:14.922 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+16:24:14.922 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+16:24:15.094 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\.metals\metals (H2 2.2)
+16:24:15.094 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+16:24:15.095 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+16:24:15.097 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+16:24:15.098 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+16:24:15.107 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+16:24:15.110 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+16:24:15.111 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+16:24:15.136 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+16:24:15.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+16:24:15.161 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+16:24:15.162 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+16:24:15.162 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+16:24:15.162 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+16:24:15.162 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+16:24:15.164 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+16:24:15.164 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+16:24:15.164 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+16:24:15.164 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+16:24:15.164 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+16:24:15.197 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.059s)
+16:24:15.206 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+16:24:15.221 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+16:24:15.229 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+16:24:15.244 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 35 of 100M
+2024.03.15 16:24:16 INFO  Attempting to connect to the build server...
+2024.03.15 16:24:16 INFO  skipping build import with status 'Installed'
+2024.03.15 16:24:16 INFO  Bloop uses C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot defined at C:\Users\Sergio Gomez Damas\.bloop\bloop.json
+2024.03.15 16:24:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\.metals\bsp.trace.json or C:\Users\Sergio Gomez Damas\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.15 16:24:23 INFO  Attempting to connect to the build server...
+2024.03.15 16:24:23 INFO  Bloop uses C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot defined at C:\Users\Sergio Gomez Damas\.bloop\bloop.json
+2024.03.15 16:24:23 INFO  Attempting to connect to the build server...
+2024.03.15 16:24:23 INFO  Bloop uses C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot defined at C:\Users\Sergio Gomez Damas\.bloop\bloop.json
+2024.03.15 16:24:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\project\.metals\bsp.trace.json or C:\Users\Sergio Gomez Damas\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.15 16:24:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\conectopia\project\project\.metals\bsp.trace.json or C:\Users\Sergio Gomez Damas\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.15 16:24:24 INFO  time: Connected to build server in 8.01s
+2024.03.15 16:24:24 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.15 16:24:24 INFO  time: Imported build in 0.73s
+2024.03.15 16:24:42 INFO  time: indexed workspace in 17s
+2024.03.15 16:27:16 INFO  compiling root (19 scala sources and 1 java source)
+2024.03.15 16:27:43 WARN  javac exited with exit code 1
+2024.03.15 16:27:43 INFO  time: compiled root in 26s
+2024.03.15 16:27:55 INFO  compiling root (19 scala sources and 1 java source)
+2024.03.15 16:28:07 WARN  javac exited with exit code 1
+2024.03.15 16:28:07 INFO  time: compiled root in 11s
