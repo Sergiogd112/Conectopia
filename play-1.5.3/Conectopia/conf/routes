@@ -168,5 +168,7 @@ GET     /favicon.ico                            404
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
+
+GET    /api/servers                            Api.servers
 # Catch all
 #*       /{controller}/{action}                  {controller}.{action}

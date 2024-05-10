@@ -7,6 +7,8 @@ import java.util.*;
 
 import models.*;
 
+import static controllers.Application.connected;
+
 public class Search extends Controller {
     @Before
     static void logparams() {
@@ -16,6 +18,7 @@ public class Search extends Controller {
         }
         Logger.debug(sb.toString());
     }
+
 
     public static void user(String query, String excludeServer) {
         // Fetch all users whose username matches the query
