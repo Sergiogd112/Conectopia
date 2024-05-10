@@ -7,6 +7,9 @@ import play.mvc.*;
 import java.util.*;
 
 import models.*;
+
+import static controllers.Application.connected;
+
 public class API  extends Controller {
     // This class returns json objects instead of rendering templates
     @Before
@@ -20,7 +23,26 @@ public class API  extends Controller {
     public static void index() {
         renderJSON("{\"error\": \"No autorizado\"}");
     }
-    
+
+    public static void servers(){
+        User user = connected();
+        assert user != null;
+        List<Server> servers = new ArrayList<>();
+
+        List<Server> tempservers = Server.findAll();
+
+        // Generate a map of server names and descriptions
+        for (Server server : tempservers) {
+            Map<String, String> serverMap = new HashMap<>();
+            serverMap.put("id", server.id.toString());
+            serverMap.put("description", server.description);
+            serverMap.put("name", server.name);
+            servers.add(server);
+        }
+        renderJSON(servers);
+    }
+
+
     public static void login(String emailuname, String password) {
         // check if emailUname is email or username if it contains @ then it is email
         // print evrything
@@ -59,10 +81,7 @@ public class API  extends Controller {
         u.save();
         renderJSON("{\"success\": \"Usuario registrado\"}");
     }
-    public static void servers() {
-        List<Server> servers = Server.findAll();
-        renderJSON(servers);
-    }
+
     public static void server(Long idServer) {
         Server server_res = Server.findById(idServer);
         if (server_res == null) {
