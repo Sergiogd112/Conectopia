@@ -10,7 +10,7 @@ import models.*;
 
 import static controllers.Application.connected;
 
-public class API  extends Controller {
+public class API extends Controller {
     // This class returns json objects instead of rendering templates
     @Before
     static void logparams() {
@@ -20,14 +20,15 @@ public class API  extends Controller {
         }
         Logger.debug(sb.toString());
     }
+
     public static void index() {
         renderJSON("{\"error\": \"No autorizado\"}");
     }
 
-    public static void servers(){
+    public static void servers() {
         User user = connected();
         assert user != null;
-        List<Server> servers = new ArrayList<>();
+        List<Map<String, String>> servers = new ArrayList<>();
 
         List<Server> tempservers = Server.findAll();
 
@@ -37,7 +38,7 @@ public class API  extends Controller {
             serverMap.put("id", server.id.toString());
             serverMap.put("description", server.description);
             serverMap.put("name", server.name);
-            servers.add(server);
+            servers.add(serverMap);
         }
         renderJSON(servers);
     }
@@ -64,10 +65,12 @@ public class API  extends Controller {
             }
         }
     }
+
     public static void logout() {
         session.clear();
         renderJSON("{\"success\": \"Usuario deslogueado\"}");
     }
+
     public static void register(String email, String username, String password) {
         User u = User.find("byEmail", email).first();
         if (u != null) {
