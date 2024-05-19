@@ -13,6 +13,14 @@ import static controllers.Application.connected;
 public class API extends Controller {
     // This class returns json objects instead of rendering templates
     @Before
+    static void addUser() {
+        User user = connected();
+        if (user != null) {
+            renderArgs.put("user", user);
+        }
+    }
+
+    @Before
     static void logparams() {
         StringBuilder sb = new StringBuilder();
         for (Map.Entry<String, String[]> entry : params.all().entrySet()) {
@@ -20,7 +28,16 @@ public class API extends Controller {
         }
         Logger.debug(sb.toString());
     }
-
+    public static User connected() {
+        if (renderArgs.get("user") != null) {
+            return renderArgs.get("user", User.class);
+        }
+        String username = session.get("user");
+        if (username != null) {
+            return User.find("byUsername", username).first();
+        }
+        return null;
+    }
     public static void index() {
         renderJSON("{\"error\": \"No autorizado\"}");
     }
@@ -54,6 +71,8 @@ public class API extends Controller {
             if (u == null || !Objects.equals(u.password, password)) {
                 renderJSON("{\"error\": \"Usuario o contraseña incorrectos\"}");
             } else {
+                session.put("user", u.username);
+
                 renderJSON("{\"success\": \"Usuario logueado\"}");
             }
         } else {
@@ -61,6 +80,7 @@ public class API extends Controller {
             if (u == null || !Objects.equals(u.password, password)) {
                 renderJSON("{\"error\": \"Usuario o contraseña incorrectos\"}");
             } else {
+                session.put("user", u.username);
                 renderJSON("{\"success\": \"Usuario logueado\"}");
             }
         }
