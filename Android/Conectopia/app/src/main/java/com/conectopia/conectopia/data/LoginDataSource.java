@@ -1,6 +1,7 @@
 package com.conectopia.conectopia.data;
 
 import com.conectopia.conectopia.data.model.LoggedInUser;
+import android.util.Log;
 
 import java.io.IOException;
 
@@ -10,6 +11,7 @@ import java.io.IOException;
 public class LoginDataSource {
 
     public Result<LoggedInUser> login(String username, String password) {
+        Log.i("LoginDataSource", "login: " + username + " " + password);
 
         try {
             // TODO: handle loggedInUser authentication

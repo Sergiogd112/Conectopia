@@ -5,16 +5,16 @@ package com.conectopia.conectopia.data.model;
  */
 public class LoggedInUser {
 
-    private String userId;
     private String displayName;
+    private String PlayToken;
 
-    public LoggedInUser(String userId, String displayName) {
-        this.userId = userId;
+    public LoggedInUser(String PlayToken, String displayName) {
+        this.PlayToken = PlayToken;
         this.displayName = displayName;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getPlayToken() {
+        return PlayToken;
     }
 
     public String getDisplayName() {
