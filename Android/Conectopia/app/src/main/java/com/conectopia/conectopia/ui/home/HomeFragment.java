@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment {
         this.homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         root.findViewById(
                 R.id.button
-        ).setOnClickListener(v -> plusOne());
+        ).setOnClickListener(v -> connectServerGET(root));
 
         return root;
     }
@@ -71,7 +71,7 @@ public class HomeFragment extends Fragment {
             public void run() {
 
                 try {
-                    String query = String.format("http://10.0.0.2:9000/api/servers");
+                    String query = String.format("http://10.0.2.2:9000/api/servers");
                     URL url = new URL(query);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setReadTimeout(10000);

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)" />
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +192,8 @@
       <workItem from="1714138157615" duration="2924000" />
       <workItem from="1714482137224" duration="40000" />
       <workItem from="1714723443978" duration="6813000" />
-      <workItem from="1715423099357" duration="607000" />
+      <workItem from="1715423099357" duration="1385000" />
+      <workItem from="1716114913976" duration="765000" />
     </task>
     <servers />
   </component>
