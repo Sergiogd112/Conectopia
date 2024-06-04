@@ -86,6 +86,9 @@ public class API extends Controller {
         }
     }
 
+
+
+
     public static void logout() {
         session.clear();
         renderJSON("{\"success\": \"Usuario deslogueado\"}");

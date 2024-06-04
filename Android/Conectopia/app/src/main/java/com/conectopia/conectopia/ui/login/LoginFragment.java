@@ -50,6 +50,7 @@ public class LoginFragment extends Fragment {
         final EditText usernameEditText = binding.username;
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
+        final Button registerButton = binding.register;
         final ProgressBar loadingProgressBar = binding.loading;
 
         loginViewModel.getLoginFormState().observe(getViewLifecycleOwner(), new Observer<LoginFormState>() {
@@ -123,6 +124,20 @@ public class LoginFragment extends Fragment {
                         passwordEditText.getText().toString());
             }
         });
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadingProgressBar.setVisibility(View.VISIBLE);
+                // check if email is valid
+                if (!usernameEditText.getText().toString().contains("@")) {
+                    usernameEditText.setError("Invalid email");
+                    return;
+                }
+                loginViewModel.register(usernameEditText.getText().toString(),
+                        passwordEditText.getText().toString());
+            }
+        });
+
     }
 
     private void updateUiWithUser(LoggedInUserView model) {

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)" />
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/data/LoginDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/data/LoginDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/data/LoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/data/LoginRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/login/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/login/LoginFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/login/LoginViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/login/LoginViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,6 +200,8 @@
       <workItem from="1714723443978" duration="6813000" />
       <workItem from="1715423099357" duration="1385000" />
       <workItem from="1716114913976" duration="765000" />
+      <workItem from="1716558068680" duration="1168000" />
+      <workItem from="1717511793229" duration="1409000" />
     </task>
     <servers />
   </component>
