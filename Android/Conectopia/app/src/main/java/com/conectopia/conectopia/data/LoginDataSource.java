@@ -22,7 +22,6 @@ public class LoginDataSource {
         InputStream stream = null;
         String str = "";
         String result = null;
-        Handler handler = new Handler();
 
         try {
             String query = String.format("http://10.0.2.2:9000/api/login?emailuname=%s&password=%s", username, password);
@@ -84,7 +83,6 @@ public class LoginDataSource {
         InputStream stream = null;
         String str = "";
         String result = null;
-        Handler handler = new Handler();
 
         try {
             String query = String.format("http://10.0.2.2:9000/api/register?username=%s&email=%s&password=%s", email.split("@")[0],email, password);

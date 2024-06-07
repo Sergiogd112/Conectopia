@@ -105,6 +105,7 @@ public class API extends Controller {
         }
         u = new User(email, username, password);
         u.save();
+        session.put("user", u.username);
         renderJSON("{\"success\": \"Usuario registrado\"}");
     }
 

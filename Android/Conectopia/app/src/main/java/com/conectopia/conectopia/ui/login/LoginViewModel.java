@@ -1,15 +1,16 @@
 package com.conectopia.conectopia.ui.login;
 
+import android.os.Handler;
+import android.util.Patterns;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import android.util.Patterns;
-
+import com.conectopia.conectopia.R;
 import com.conectopia.conectopia.data.LoginRepository;
 import com.conectopia.conectopia.data.Result;
 import com.conectopia.conectopia.data.model.LoggedInUser;
-import com.conectopia.conectopia.R;
 
 public class LoginViewModel extends ViewModel {
 
@@ -31,25 +32,52 @@ public class LoginViewModel extends ViewModel {
 
     public void login(String username, String password) {
         // can be launched in a separate asynchronous job
-        Result<LoggedInUser> result = loginRepository.login(username, password);
+        new Thread(new Runnable() {
 
-        if (result instanceof Result.Success) {
-            LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
-            loginResult.setValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
-        } else {
-            loginResult.setValue(new LoginResult(R.string.login_failed));
-        }
+            Handler handler = new Handler();
+
+            public void run() {
+                Result<LoggedInUser> result = loginRepository.login(username, password);
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (result instanceof Result.Success) {
+                            LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
+                            loginResult.postValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
+                            LoggedInUser.setInstance(data);
+                        } else {
+                            loginResult.postValue(new LoginResult(R.string.login_failed));
+                        }
+                    }
+                });
+            }
+        }).start();
     }
+
     public void register(String username, String password) {
         // can be launched in a separate asynchronous job
-        Result<LoggedInUser> result = loginRepository.register(username, password);
+        new Thread(new Runnable() {
 
-        if (result instanceof Result.Success) {
-            LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
-            loginResult.setValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
-        } else {
-            loginResult.setValue(new LoginResult(R.string.register_failed));
-        }
+            Handler handler = new Handler();
+
+            public void run() {
+                Result<LoggedInUser> result = loginRepository.register(username, password);
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (result instanceof Result.Success) {
+                            LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
+                            loginResult.postValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
+                            LoggedInUser.setInstance(data);
+                        } else {
+                            loginResult.postValue(new LoginResult(R.string.register_failed));
+                        }
+                    }
+                });
+            }
+        }).start();
     }
 
     public void loginDataChanged(String username, String password) {

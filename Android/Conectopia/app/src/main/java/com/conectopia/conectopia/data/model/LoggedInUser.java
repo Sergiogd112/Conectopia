@@ -8,6 +8,9 @@ public class LoggedInUser {
     private String displayName;
     private String PlayToken;
 
+    // singleton
+    private static LoggedInUser instance = new LoggedInUser("","");
+
     public LoggedInUser(String PlayToken, String displayName) {
         this.PlayToken = PlayToken;
         this.displayName = displayName;
@@ -19,5 +22,12 @@ public class LoggedInUser {
 
     public String getDisplayName() {
         return displayName;
+    }
+
+    public static LoggedInUser getInstance() {
+        return instance;
+    }
+    public static void setInstance(LoggedInUser user) {
+        instance = user;
     }
 }
