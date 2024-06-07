@@ -27,30 +27,34 @@ public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
     private HomeViewModel homeViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        this.homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inicializa el ViewModel
+        this.homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
 
+        // Infla el layout usando el binding
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        this.homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        root.findViewById(
-                R.id.button
-        ).setOnClickListener(v -> connectServerGET(root));
+        // Configura el TextView para observar cambios en el ViewModel
+
+
+
+        // Configura el botón para hacer la solicitud GET
+        //root.findViewById(R.id.button).setOnClickListener(v -> connectServerGET(v));
 
         return root;
     }
 
-    @Override
-    public void onDestroyView() {
+
+    @Override   public void onDestroyView() {
         super.onDestroyView();
         binding = null;
     }
 
-    public void plusOne() {
+
+
+   /* public void plusOne () {
         View root = binding.getRoot();
 
         this.count++;
@@ -58,7 +62,7 @@ public class HomeFragment extends Fragment {
         this.homeViewModel.mText.setValue(String.valueOf(this.count));
 
 
-    }
+    }*/
 
     public void connectServerGET(View view) {
 
@@ -104,6 +108,7 @@ public class HomeFragment extends Fragment {
                         public void run() {
                             homeViewModel.mText.setValue(String.valueOf(result));
                         }
+
                     });
 
                 } catch (Exception e) {

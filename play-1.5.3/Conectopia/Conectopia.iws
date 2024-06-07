@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conectopia.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/API.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,6 +72,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Shell Script.Run Windows.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.Test.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -98,7 +106,7 @@
       <recent name="C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\play-1.5.3\Conectopia\app\views\tags" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Run Windows">
+  <component name="RunManager" selected="Shell Script.Run bryan">
     <configuration name="Conectopia" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Conectopia" />
       <option name="allowRunningInParallel" value="false" />
@@ -129,7 +137,7 @@
       </method>
     </configuration>
     <configuration name="Run bryan" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value=".\play.bat run conectopia" />
+      <option name="SCRIPT_TEXT" value=" $env:JAVA_HOME=&quot;C:\Program Files\Java\jre1.8.0_51&quot;; .\play.bat run conectopia" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="" />
       <option name="SCRIPT_OPTIONS" value="" />
@@ -159,7 +167,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Play App.Conectopia" />
+      <item itemvalue="Play 2 App.Conectopia" />
       <item itemvalue="Shell Script.Run bryan" />
       <item itemvalue="Shell Script.Run Windows" />
       <item itemvalue="Shell Script.Test" />
@@ -196,6 +204,8 @@
       <workItem from="1716558068680" duration="1168000" />
       <workItem from="1717511793229" duration="2026000" />
       <workItem from="1717695702487" duration="1264000" />
+      <workItem from="1717751649448" duration="2513000" />
+      <workItem from="1717793230241" duration="296000" />
     </task>
     <servers />
   </component>
