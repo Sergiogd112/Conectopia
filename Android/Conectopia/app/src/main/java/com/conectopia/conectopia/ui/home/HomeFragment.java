@@ -15,6 +15,9 @@ import androidx.lifecycle.ViewModelProvider;
 import com.conectopia.conectopia.R;
 import com.conectopia.conectopia.databinding.FragmentHomeBinding;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -102,13 +105,19 @@ public class HomeFragment extends Fragment {
                     // EditText n = (EditText) findViewById (R.id.edit_message);
                     //n.setText(result);
 
-                    //Codi correcte
-                    Log.i("serverTest", result);
+                    JSONArray jsonArray = new JSONArray(result);
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject jsonObject = jsonArray.getJSONObject(i);
+                        String serverName = jsonObject.getString("serverName");
+                        String description = jsonObject.getString("description");
+                        Log.i("serverTest", "Server Name: " + serverName);
+                        Log.i("serverTest", "Description: " + description);
+                    }
+
                     handler.post(new Runnable() {
                         public void run() {
                             homeViewModel.mText.setValue(String.valueOf(result));
                         }
-
                     });
 
                 } catch (Exception e) {
