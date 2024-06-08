@@ -148,18 +148,18 @@ GET     /dashboard/server/{idServer}/roles            Dashboard.serverRoles
 POST    /dashboard/server/{idServer}/role             Dashboard.serverRolePost
 
 # GET request to retrieve all badges on the dashboard
-GET     /dashboard/badges                      Dashboard.badges
+GET     /dashboard/badges                       Dashboard.badges
 
 # POST request to create a new badge on the dashboard
-POST    /dashboard/badge                       Dashboard.badgePost
+POST    /dashboard/badge                        Dashboard.badgePost
 
 # GET request to retrieve a specific badge on the dashboard
 # The {idbadge} in the URL is a placeholder for the badge ID
-GET     /dashboard/badge/{idbadge}             Dashboard.badge
+GET     /dashboard/badge/{idbadge}              Dashboard.badge
 
-GET     /dashboard/profile                     Dashboard.profile
+GET     /dashboard/profile                      Dashboard.profile
 
-PUT    /dashboard/profile                     Dashboard.updateProfile
+PUT    /dashboard/profile                       Dashboard.updateProfile
 
 
 # Ignore favicon requests
@@ -169,15 +169,17 @@ GET     /favicon.ico                            404
 GET     /public/                                staticDir:public
 
 
-GET    /api/servers                            Api.servers
+GET    /api/servers                             Api.servers
 
-GET    /api/server                             Api.server
+GET    /api/server                              Api.server
 
-GET    /api/login                              Api.login
+GET   /api/chat                                 Api.chat
 
-GET    /api/register                           Api.register
+GET    /api/login                               Api.login
 
-GET    /api/logout                             Api.logout
+GET    /api/register                            Api.register
+
+GET    /api/logout                              Api.logout
 
 
 # Catch all

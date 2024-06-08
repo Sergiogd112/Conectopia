@@ -154,4 +154,46 @@ public class API extends Controller {
         server.put("chats", chats);
         renderJSON(server);
     }
+
+    public static void chat(Long idChat) {
+        Chat chat_res = Chat.findById(idChat);
+        if (chat_res == null) {
+            renderJSON("{\"error\": \"Chat no encontrado\"}");
+        }
+        /*
+        Generate a json with this format:
+        {
+            "name": "Chat_Name",
+            "description": "Chat_Description",
+            "id": "Chat_ID",
+            "messages": [
+                {
+                    "content": "Message_Content",
+                    "date": "Message_Date",
+                    "user": {
+                        "username": "User_Username",
+                        "role": "User_Role"
+                    }
+                }
+            ]
+        }
+        */
+        Map<String, Object> chat = new HashMap<>();
+        chat.put("name", chat_res.name);
+        chat.put("description", chat_res.description);
+        chat.put("id", chat_res.id);
+        List<Map<String, Object>> messages = new ArrayList<>();
+        for (Message message : chat_res.messages) {
+            Map<String, Object> messageMap = new HashMap<>();
+            messageMap.put("content", message.content);
+            messageMap.put("date", message.created.toString());
+            Map<String, String> userMap = new HashMap<>();
+            userMap.put("username", message.user.username);
+            userMap.put("role", message.user.getRole(chat_res.server).name);
+            messageMap.put("user", userMap);
+            messages.add(messageMap);
+        }
+        chat.put("messages", messages);
+        renderJSON(chat);
+    }
 }
