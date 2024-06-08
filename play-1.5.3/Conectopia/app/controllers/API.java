@@ -28,6 +28,7 @@ public class API extends Controller {
         }
         Logger.debug(sb.toString());
     }
+
     public static User connected() {
         if (renderArgs.get("user") != null) {
             return renderArgs.get("user", User.class);
@@ -38,6 +39,7 @@ public class API extends Controller {
         }
         return null;
     }
+
     public static void index() {
         renderJSON("{\"error\": \"No autorizado\"}");
     }
@@ -87,8 +89,6 @@ public class API extends Controller {
     }
 
 
-
-
     public static void logout() {
         session.clear();
         renderJSON("{\"success\": \"Usuario deslogueado\"}");
@@ -114,6 +114,44 @@ public class API extends Controller {
         if (server_res == null) {
             renderJSON("{\"error\": \"Server no encontrado\"}");
         }
-        renderJSON(server_res);
+        /*
+        Generate a json with this format:
+        {
+            "name": "Server_Name",
+            "description": "Server_Description",
+            "id": "Server_ID",
+            "members": [
+                "member1",
+                "member2",
+                "member3"
+            ],
+            "chats": [
+                {
+                    "name": "Chat_Name",
+                    "description": "Chat_Description",
+                    "id": "Chat_ID"
+                }
+            ]
+        }
+        */
+        Map<String, Object> server = new HashMap<>();
+        server.put("name", server_res.name);
+        server.put("description", server_res.description);
+        server.put("id", server_res.id);
+        List<String> members = new ArrayList<>();
+        for (Member member : server_res.members) {
+            members.add(member.user.username);
+        }
+        server.put("members", members);
+        List<Map<String, String>> chats = new ArrayList<>();
+        for (Chat chat : server_res.chats) {
+            Map<String, String> chatMap = new HashMap<>();
+            chatMap.put("name", chat.name);
+            chatMap.put("description", chat.description);
+            chatMap.put("id", chat.id.toString());
+            chats.add(chatMap);
+        }
+        server.put("chats", chats);
+        renderJSON(server);
     }
 }

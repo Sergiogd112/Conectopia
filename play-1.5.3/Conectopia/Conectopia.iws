@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/API.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +163,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Play 2 App.Conectopia" />
+      <item itemvalue="Play App.Conectopia" />
       <item itemvalue="Shell Script.Run bryan" />
       <item itemvalue="Shell Script.Run Windows" />
       <item itemvalue="Shell Script.Test" />

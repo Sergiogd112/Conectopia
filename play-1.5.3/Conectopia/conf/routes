@@ -171,6 +171,8 @@ GET     /public/                                staticDir:public
 
 GET    /api/servers                            Api.servers
 
+GET    /api/server                             Api.server
+
 GET    /api/login                              Api.login
 
 GET    /api/register                           Api.register
