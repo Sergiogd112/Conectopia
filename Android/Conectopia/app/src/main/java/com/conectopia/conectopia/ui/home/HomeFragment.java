@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
 
         // Configura el TextView para observar cambios en el ViewModel
 
-
+        connectServerGET(root);
 
         // Configura el botón para hacer la solicitud GET
         //root.findViewById(R.id.button).setOnClickListener(v -> connectServerGET(v));
@@ -104,7 +104,7 @@ public class HomeFragment extends Fragment {
                     // Codi incorrecte
                     // EditText n = (EditText) findViewById (R.id.edit_message);
                     //n.setText(result);
-
+                    Log.i("serverTest", "Result: " + result);
                     JSONArray jsonArray = new JSONArray(result);
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
