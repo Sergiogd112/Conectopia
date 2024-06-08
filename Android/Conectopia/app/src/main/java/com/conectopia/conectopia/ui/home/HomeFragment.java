@@ -108,9 +108,9 @@ public class HomeFragment extends Fragment {
                     JSONArray jsonArray = new JSONArray(result);
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        String serverName = jsonObject.getString("serverName");
+                        String name = jsonObject.getString("name");
                         String description = jsonObject.getString("description");
-                        Log.i("serverTest", "Server Name: " + serverName);
+                        Log.i("serverTest", "Server Name: " + name);
                         Log.i("serverTest", "Description: " + description);
                     }
 
