@@ -70,6 +70,44 @@ public class Bootstrap extends Job {
             marte.roles.add(ownerMarte);
             marte.save();
 
+            Member juanTierra = new Member();
+            juanTierra.user = juan;
+            juanTierra.server = tierra;
+            juanTierra.save();
+
+            Role tierraMember = new Role();
+            tierraMember.name = "Member";
+            tierraMember.color = "blue";
+            tierraMember.server = tierra;
+            tierraMember.members.add(juanTierra);
+            tierraMember.save();
+            juanTierra.role = tierraMember;
+            juanTierra.save();
+            juan.members.add(juanTierra);
+            juan.save();
+            tierra.members.add(juanTierra);
+            tierra.roles.add(tierraMember);
+            tierra.save();
+
+            Member juanMarte = new Member();
+            juanMarte.user = juan;
+            juanMarte.server = marte;
+            juanMarte.save();
+
+            Role marteMember = new Role();
+            marteMember.name = "Member";
+            marteMember.color = "blue";
+            marteMember.server = marte;
+            marteMember.members.add(juanMarte);
+            marteMember.save();
+            juanMarte.role = marteMember;
+            juanMarte.save();
+            juan.members.add(juanMarte);
+            juan.save();
+            marte.members.add(juanMarte);
+            marte.roles.add(marteMember);
+            marte.save();
+
             // Chats
             Chat tierra_Chat_lagos = new Chat();
             tierra_Chat_lagos.name = "Lagos";
@@ -86,6 +124,9 @@ public class Bootstrap extends Job {
             marte.save();
 
             // Mensajes
+            /// Tierra
+            //// Lagos
+
             Message sergioTierraLagos = new Message();
             sergioTierraLagos.user = sergio;
             sergioTierraLagos.chat = tierra_Chat_lagos;
@@ -96,6 +137,19 @@ public class Bootstrap extends Job {
             sergio.messages.add(sergioTierraLagos);
             sergio.save();
 
+            Message juanTierraLagos = new Message();
+            juanTierraLagos.user = juan;
+            juanTierraLagos.chat = tierra_Chat_lagos;
+            juanTierraLagos.content = "Buenas, chapulín";
+            juanTierraLagos.save();
+            tierra_Chat_lagos.messages.add(juanTierraLagos);
+            tierra_Chat_lagos.save();
+            juan.messages.add(juanTierraLagos);
+            juan.save();
+
+            /// Marte
+            //// Cráteres
+
             Message bryanMarteCrateres = new Message();
             bryanMarteCrateres.user = bryan;
             bryanMarteCrateres.chat = marte_Chat_crateres;
@@ -105,6 +159,16 @@ public class Bootstrap extends Job {
             marte_Chat_crateres.save();
             bryan.messages.add(bryanMarteCrateres);
             bryan.save();
+
+            Message juanMarteCrateres = new Message();
+            juanMarteCrateres.user = juan;
+            juanMarteCrateres.chat = marte_Chat_crateres;
+            juanMarteCrateres.content = "Buenas, chapulón";
+            juanMarteCrateres.save();
+            marte_Chat_crateres.messages.add(juanMarteCrateres);
+            marte_Chat_crateres.save();
+            juan.messages.add(juanMarteCrateres);
+            juan.save();
 
             // Badges
             Badge badge1 = new Badge();
