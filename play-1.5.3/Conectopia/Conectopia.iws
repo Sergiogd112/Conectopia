@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
-      <change beforePath="$PROJECT_DIR$/Conectopia.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
-    </list>
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +99,7 @@
       <recent name="C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\play-1.5.3\Conectopia\app\views\tags" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Run bryan">
+  <component name="RunManager" selected="Shell Script.Run Windows">
     <configuration name="Conectopia" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Conectopia" />
       <option name="allowRunningInParallel" value="false" />
@@ -206,7 +200,7 @@
       <workItem from="1717751649448" duration="2513000" />
       <workItem from="1717793230241" duration="658000" />
       <workItem from="1717838120095" duration="1287000" />
-      <workItem from="1717931851776" duration="1680000" />
+      <workItem from="1717931851776" duration="2371000" />
     </task>
     <servers />
   </component>

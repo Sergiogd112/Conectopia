@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -23,12 +23,20 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeFragment extends Fragment {
     int count = 0;
 
     private FragmentHomeBinding binding;
     private HomeViewModel homeViewModel;
+    private ListView listView;
+
+    private ServerAdapter adapter;
+
+    private List<JSONObject> servers;
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -38,6 +46,14 @@ public class HomeFragment extends Fragment {
         // Infla el layout usando el binding
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        // Create a list to store the servers
+        servers = new ArrayList<>();
+        ListView listView = root.findViewById(R.id.listView);
+
+        // Create an adapter and set it to the ListView
+        adapter = new ServerAdapter(getContext(), servers);
+        listView.setAdapter(adapter);
 
         // Configura el TextView para observar cambios en el ViewModel
 
@@ -50,7 +66,8 @@ public class HomeFragment extends Fragment {
     }
 
 
-    @Override   public void onDestroyView() {
+    @Override
+    public void onDestroyView() {
         super.onDestroyView();
         binding = null;
     }
@@ -106,21 +123,33 @@ public class HomeFragment extends Fragment {
                     //n.setText(result);
                     Log.i("serverTest", "Result: " + result);
                     JSONArray jsonArray = new JSONArray(result);
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        String name = jsonObject.getString("name");
-                        String description = jsonObject.getString("description");
-                        Log.i("serverTest", "Server Name: " + name);
-                        Log.i("serverTest", "Description: " + description);
-                    }
 
+                    // get the list view from the root
                     handler.post(new Runnable() {
                         public void run() {
-                            homeViewModel.mText.setValue(String.valueOf(result));
+                            for (int i = 0; i < jsonArray.length(); i++) {
+                                try {
+                                    JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                    String name = jsonObject.getString("name");
+                                    String description = jsonObject.getString("description");
+                                    Log.i("serverTest", "Server Name: " + name);
+                                    Log.i("serverTest", "Description: " + description);
+                                    // create a new card-like element in the list view
+                                    // the name of the server is the title
+                                    // the description of the server is the paragraph
+                                    servers.add(jsonObject);
+
+                                } catch (Exception e) {
+                                    Log.e("serverTest", "Error: " + e.getMessage());
+                                }
+
+                            }
+                            adapter.notifyDataSetChanged();
                         }
                     });
 
                 } catch (Exception e) {
+                    Log.e("serverTest", "Error: " + e.getMessage());
                     e.printStackTrace();
                 }
             }
