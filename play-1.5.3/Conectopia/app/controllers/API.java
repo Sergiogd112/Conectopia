@@ -155,6 +155,31 @@ public class API extends Controller {
         renderJSON(server);
     }
 
+    public static void createServer(String serverName, String serverDescription) {
+        User user = connected();
+        if (user == null) {
+            renderJSON("{\"error\": \"Usuario no logueado\"}");
+        }
+        Server newserver = new Server(serverName, serverDescription);
+        Role role = new Role();
+        role.name = "Owner";
+        role.color = "magenta";
+
+        Member member = new Member();
+        member.user = user;
+        member.role = role;
+        member.server = newserver;
+
+        newserver.members.add(member);
+        newserver.roles.add(role);
+        role.members.add(member);
+        user.members.add(member);
+        newserver.save();
+        role.save();
+        member.save();
+        server(newserver.id);
+    }
+
     public static void chat(Long idChat) {
         Chat chat_res = Chat.findById(idChat);
         if (chat_res == null) {
@@ -196,4 +221,41 @@ public class API extends Controller {
         chat.put("messages", messages);
         renderJSON(chat);
     }
+
+    public static void createChat(Long idServer, String chatName, String chatDescription) {
+        User user = connected();
+        if (user == null) {
+            renderJSON("{\"error\": \"Usuario no logueado\"}");
+        }
+        Server server_res = Server.findById(idServer);
+        if (server_res == null) {
+            renderJSON("{\"error\": \"Server no encontrado\"}");
+        }
+        Chat chat = new Chat(chatName, chatDescription);
+        chat.server = server_res;
+        chat.save();
+        server_res.chats.add(chat);
+        server_res.save();
+        chat(chat.id);
+    }
+
+    public static void createMessage(Long idChat, String content) {
+        User user = connected();
+        if (user == null) {
+            renderJSON("{\"error\": \"Usuario no logueado\"}");
+        }
+        Chat chat_res = Chat.findById(idChat);
+        if (chat_res == null) {
+            renderJSON("{\"error\": \"Chat no encontrado\"}");
+        }
+        Message message = new Message();
+        message.user = user;
+        message.chat = chat_res;
+        message.content = content;
+        message.save();
+        chat_res.messages.add(message);
+        chat_res.save();
+        chat(chat_res.id);
+    }
+
 }

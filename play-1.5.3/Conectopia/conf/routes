@@ -173,7 +173,13 @@ GET    /api/servers                             Api.servers
 
 GET    /api/server                              Api.server
 
+POST   /api/server                              Api.createServer
+
 GET   /api/chat                                 Api.chat
+
+POST   /api/chat                                Api.createChat
+
+POST   /api/message                             Api.createMessage
 
 GET    /api/login                               Api.login
 

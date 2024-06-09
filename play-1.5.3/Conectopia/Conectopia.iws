@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
+      <change beforePath="$PROJECT_DIR$/Conectopia.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Bootstrap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/API.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
     </list>
@@ -203,6 +206,7 @@
       <workItem from="1717751649448" duration="2513000" />
       <workItem from="1717793230241" duration="658000" />
       <workItem from="1717838120095" duration="1287000" />
+      <workItem from="1717931851776" duration="1680000" />
     </task>
     <servers />
   </component>
