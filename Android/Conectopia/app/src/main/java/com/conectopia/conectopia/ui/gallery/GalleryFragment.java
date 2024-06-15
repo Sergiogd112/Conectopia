@@ -1,6 +1,7 @@
 package com.conectopia.conectopia.ui.gallery;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,14 @@ public class GalleryFragment extends Fragment {
 
         final TextView textView = binding.textGallery;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        // Log the server id if it exists in the bundle
+        if (getArguments() != null) {
+            String serverId = getArguments().getString("serverId");
+            if (serverId != null) {
+                System.out.println("Server ID: " + serverId);
+                Log.i("Server ID", serverId);
+            }
+        }
         return root;
     }
 

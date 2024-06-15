@@ -65,14 +65,11 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
     }
-
-
 
    /* public void plusOne () {
         View root = binding.getRoot();
@@ -127,6 +124,7 @@ public class HomeFragment extends Fragment {
                     // get the list view from the root
                     handler.post(new Runnable() {
                         public void run() {
+                            servers.clear();
                             for (int i = 0; i < jsonArray.length(); i++) {
                                 try {
                                     JSONObject jsonObject = jsonArray.getJSONObject(i);

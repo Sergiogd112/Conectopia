@@ -1,5 +1,6 @@
 package com.conectopia.conectopia.ui.home;
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.navigation.Navigation;
 
 import com.conectopia.conectopia.R;
 
@@ -36,6 +38,19 @@ public class ServerAdapter extends ArrayAdapter<JSONObject> {
         try {
             serverName.setText(server.getString("name"));
             serverDescription.setText(server.getString("description"));
+            final String serverId = server.getString("id");
+
+            convertView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Create a bundle to hold the server id
+                    Bundle bundle = new Bundle();
+                    bundle.putString("serverId", serverId);
+
+                    // Use the Navigation component to navigate to the gallery view
+                    Navigation.findNavController(v).navigate(R.id.nav_gallery, bundle);
+                }
+            });
         } catch (Exception e) {
             e.printStackTrace();
         }

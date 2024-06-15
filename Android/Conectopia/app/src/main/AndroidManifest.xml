@@ -18,6 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Conectopia"
         android:usesCleartextTraffic="true"
+        android:enableOnBackInvokedCallback="true"
+
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
