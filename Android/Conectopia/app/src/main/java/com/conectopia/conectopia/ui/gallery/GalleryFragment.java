@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -14,7 +15,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.conectopia.conectopia.R;
 import com.conectopia.conectopia.databinding.FragmentGalleryBinding;
-import com.conectopia.conectopia.ui.home.ServerAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -36,6 +36,7 @@ public class GalleryFragment extends Fragment {
     private String serverId;
     private String serverName;
     private String serverDescription;
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -50,9 +51,8 @@ public class GalleryFragment extends Fragment {
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        root.findViewById(R.id.serverNameTextView).setText(serverName);
-        root.findViewById(R.id.descriptionTextView).setText(serverDescription);
-        // Create a list to store the servers
+        ((TextView) root.findViewById(R.id.serverNameTextView)).setText(serverName);
+        ((TextView) root.findViewById(R.id.descriptionTextView)).setText(serverDescription);        // Create a list to store the servers
         chats = new ArrayList<>();
         ListView listView = root.findViewById(R.id.listView);
 
@@ -115,7 +115,8 @@ public class GalleryFragment extends Fragment {
                     // EditText n = (EditText) findViewById (R.id.edit_message);
                     //n.setText(result);
                     Log.i("serverTest", "Result: " + result);
-                    JSONArray jsonArray = new JSONArray(result);
+                    JSONObject jsonObject = new JSONObject(result);
+                    JSONArray jsonArray = new JSONArray(jsonObject.getString("chats"));
 
                     // get the list view from the root
                     handler.post(new Runnable() {
