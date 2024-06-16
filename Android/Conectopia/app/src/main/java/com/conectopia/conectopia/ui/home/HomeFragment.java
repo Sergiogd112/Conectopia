@@ -28,6 +28,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.conectopia.conectopia.data.model.LoggedInUser;
+
 public class HomeFragment extends Fragment {
     int count = 0;
 
@@ -62,6 +64,10 @@ public class HomeFragment extends Fragment {
         createServerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (LoggedInUser.getInstance().getPlayToken().equals("")) {
+                    Navigation.findNavController(v).navigate(R.id.nav_login);
+                    return;
+                }
                 Navigation.findNavController(v).navigate(R.id.createServerFragment);
             }
         });
@@ -106,6 +112,7 @@ public class HomeFragment extends Fragment {
                     conn.setReadTimeout(10000);
                     conn.setConnectTimeout(15000 /* milliseconds */);
                     conn.setRequestMethod("GET");
+                    conn.setRequestProperty("Cookie", LoggedInUser.getInstance().getPlayToken());
                     conn.setDoInput(true);
                     conn.connect();
                     stream = conn.getInputStream();

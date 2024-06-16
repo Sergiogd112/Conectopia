@@ -1,14 +1,26 @@
 package com.conectopia.conectopia.ui.createServer;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+
+import androidx.fragment.app.Fragment;
 
 import com.conectopia.conectopia.R;
+import com.conectopia.conectopia.data.model.LoggedInUser;
+import com.conectopia.conectopia.databinding.FragmentCreateServerBinding;
+
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,14 +29,11 @@ import com.conectopia.conectopia.R;
  */
 public class CreateServerFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private FragmentCreateServerBinding binding;
+    private EditText serverNameInput;
+    private EditText serverDescriptionInput;
+
 
     public CreateServerFragment() {
         // Required empty public constructor
@@ -42,25 +51,110 @@ public class CreateServerFragment extends Fragment {
     public static CreateServerFragment newInstance(String param1, String param2) {
         CreateServerFragment fragment = new CreateServerFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
 
-    @Override
+/*    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        // on click listener for the button createServerButton
+        // this will call the connectCreateServer method
+        // to create a new server
+        View view = inflater.inflate(R.layout.fragment_create_server, container, false);
+
+        binding = FragmentCreateServerBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+        serverNameInput = binding.serverNameInput;
+        serverDescriptionInput = binding.serverDescriptionInput;
+
+        root.findViewById(R.id.createServerButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                connectCreateServer(v);
+            }
+        });
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create_server, container, false);
+        return root;
+    }
+
+
+    public void connectCreateServer(View view) {
+
+        String serverName = serverNameInput.getText().toString();
+        String serverDescription = serverDescriptionInput.getText().toString();
+        new Thread(new Runnable() {
+            InputStream stream = null;
+            String str = "";
+            String result = null;
+            Handler handler = new Handler();
+
+            public void run() {
+
+                try {
+                    String query = String.format("http://10.0.2.2:9000/api/server");
+                    URL url = new URL(query);
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setReadTimeout(10000);
+                    conn.setConnectTimeout(15000 /* milliseconds */);
+                    conn.setRequestMethod("POST");
+                    conn.setDoInput(true);
+                    conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+                    conn.setRequestProperty("Accept", "application/json");
+                    Log.i("serverTest", "Token: " + LoggedInUser.getInstance().getPlayToken());
+                    // add the cookie
+                    conn.setRequestProperty("Cookie", LoggedInUser.getInstance().getPlayToken());
+
+                    // add the JSON object
+                    JSONObject jsonParam = new JSONObject();
+                    jsonParam.put("serverName", serverName);
+                    jsonParam.put("serverDescription", serverDescription);
+                    conn.connect();
+                    stream = conn.getInputStream();
+
+                    BufferedReader reader = null;
+
+                    StringBuilder sb = new StringBuilder();
+
+                    reader = new BufferedReader(new InputStreamReader(stream));
+
+                    String line = null;
+                    while ((line = reader.readLine()) != null) {
+                        sb.append(line);
+                    }
+                    result = sb.toString();
+                    conn.disconnect();
+                    // Mostrar resultat en el quadre de text.
+                    // Codi incorrecte
+                    // EditText n = (EditText) findViewById (R.id.edit_message);
+                    //n.setText(result);
+                    Log.i("serverTest", "Result: " + result);
+
+                    // get the list view from the root
+                    handler.post(new Runnable() {
+                        public void run() {
+
+                        }
+                    });
+
+                } catch (Exception e) {
+                    Log.e("serverTest", "Error: " + e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+        }).start();
     }
 }

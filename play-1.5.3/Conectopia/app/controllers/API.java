@@ -46,10 +46,21 @@ public class API extends Controller {
 
     public static void servers() {
         User user = connected();
-        assert user != null;
+
         List<Map<String, String>> servers = new ArrayList<>();
 
-        List<Server> tempservers = Server.findAll();
+        List<Server> tempservers;
+        if (user!=null){
+            System.out.println("User: " + user.username);
+            // get the servers where the user is a member
+            List<Member> members = Member.find("byUser", user).fetch();
+            tempservers = new ArrayList<>();
+            for (Member member : members) {
+                tempservers.add(member.server);
+            }
+        } else {
+            tempservers = Server.findAll();
+        }
 
         // Generate a map of server names and descriptions
         for (Server server : tempservers) {

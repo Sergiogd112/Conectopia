@@ -70,7 +70,7 @@ public class LoginDataSource {
             Log.i("serverTest", result);
             LoggedInUser fakeUser =
                     new LoggedInUser(
-                            playToken,
+                            cookie,
                             username);
             return new Result.Success<LoggedInUser>(fakeUser);
         } catch (Exception e) {
@@ -123,15 +123,15 @@ public class LoginDataSource {
 
             // Get the PLAY token from the cookie PLAY_SESSION in the response header
             String cookie = conn.getHeaderField("Set-Cookie");
-            Log.i("serverTest", cookie);
-            String[] parts = cookie.split(";");
-            String playToken = parts[0].substring(11);
-            Log.i("serverTest", playToken);
+            Log.i("serverTest", "Holi");
+//            Log.i("serverTest", cookie);
+//            String playToken = cookie;
+//            Log.i("serverTest", playToken);
 
             Log.i("serverTest", result);
             LoggedInUser fakeUser =
                     new LoggedInUser(
-                            playToken,
+                            cookie,
                             email);
             return new Result.Success<LoggedInUser>(fakeUser);
         } catch (Exception e) {
