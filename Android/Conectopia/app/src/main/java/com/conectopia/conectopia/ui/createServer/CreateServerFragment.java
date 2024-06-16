@@ -1,4 +1,4 @@
-package com.conectopia.conectopia.ui;
+package com.conectopia.conectopia.ui.createServer;
 
 import android.os.Bundle;
 
