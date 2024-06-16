@@ -1,4 +1,4 @@
-package com.conectopia.conectopia.ui.home;
+package com.conectopia.conectopia.ui.gallery;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,9 +17,9 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-public class ServerAdapter extends ArrayAdapter<JSONObject> {
+public class ChatAdapter extends ArrayAdapter<JSONObject> {
 
-    public ServerAdapter(@NonNull Context context, @NonNull List<JSONObject> objects) {
+    public ChatAdapter(@NonNull Context context, @NonNull List<JSONObject> objects) {
         super(context, 0, objects);
     }
 
@@ -46,8 +46,6 @@ public class ServerAdapter extends ArrayAdapter<JSONObject> {
                     // Create a bundle to hold the server id
                     Bundle bundle = new Bundle();
                     bundle.putString("serverId", serverId);
-                    bundle.putString("serverName", serverName.getText().toString());
-                    bundle.putString("serverDescription", serverDescription.getText().toString());
 
                     // Use the Navigation component to navigate to the gallery view
                     Navigation.findNavController(v).navigate(R.id.nav_gallery, bundle);
