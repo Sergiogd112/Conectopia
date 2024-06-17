@@ -1,12 +1,5 @@
 package com.conectopia.conectopia.ui.login;
 
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
-import androidx.fragment.app.Fragment;
-
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -21,9 +14,15 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.conectopia.conectopia.databinding.FragmentLoginBinding;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.conectopia.conectopia.R;
+import com.conectopia.conectopia.databinding.FragmentLoginBinding;
 
 public class LoginFragment extends Fragment {
 
@@ -111,7 +110,7 @@ public class LoginFragment extends Fragment {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     loginViewModel.login(usernameEditText.getText().toString(),
-                            passwordEditText.getText().toString());
+                            passwordEditText.getText().toString(), binding);
                 }
                 return false;
             }
@@ -122,7 +121,7 @@ public class LoginFragment extends Fragment {
             public void onClick(View v) {
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
+                        passwordEditText.getText().toString(), binding);
             }
         });
         registerButton.setOnClickListener(new View.OnClickListener() {
@@ -135,7 +134,7 @@ public class LoginFragment extends Fragment {
                     return;
                 }
                 loginViewModel.register(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
+                        passwordEditText.getText().toString(), binding);
             }
         });
 

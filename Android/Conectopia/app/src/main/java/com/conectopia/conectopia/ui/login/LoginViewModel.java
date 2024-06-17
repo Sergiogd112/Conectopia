@@ -6,11 +6,13 @@ import android.util.Patterns;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+import androidx.navigation.Navigation;
 
 import com.conectopia.conectopia.R;
 import com.conectopia.conectopia.data.LoginRepository;
 import com.conectopia.conectopia.data.Result;
 import com.conectopia.conectopia.data.model.LoggedInUser;
+import com.conectopia.conectopia.databinding.FragmentLoginBinding;
 
 public class LoginViewModel extends ViewModel {
 
@@ -30,7 +32,7 @@ public class LoginViewModel extends ViewModel {
         return loginResult;
     }
 
-    public void login(String username, String password) {
+    public void login(String username, String password, FragmentLoginBinding binding) {
         // can be launched in a separate asynchronous job
         new Thread(new Runnable() {
 
@@ -46,6 +48,8 @@ public class LoginViewModel extends ViewModel {
                             LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
                             loginResult.postValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
                             LoggedInUser.setInstance(data);
+                            // navigate to the home screen
+                            Navigation.findNavController(binding.getRoot()).navigate(R.id.nav_home);
                         } else {
                             loginResult.postValue(new LoginResult(R.string.login_failed));
                         }
@@ -55,7 +59,7 @@ public class LoginViewModel extends ViewModel {
         }).start();
     }
 
-    public void register(String username, String password) {
+    public void register(String username, String password, FragmentLoginBinding binding) {
         // can be launched in a separate asynchronous job
         new Thread(new Runnable() {
 
@@ -71,6 +75,8 @@ public class LoginViewModel extends ViewModel {
                             LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
                             loginResult.postValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
                             LoggedInUser.setInstance(data);
+                            // navigate to the home screen
+                            Navigation.findNavController(binding.getRoot()).navigate(R.id.nav_home);
                         } else {
                             loginResult.postValue(new LoginResult(R.string.register_failed));
                         }
