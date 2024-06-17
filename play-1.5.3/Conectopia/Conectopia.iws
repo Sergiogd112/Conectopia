@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
       <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/createServer/CreateServerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/createServer/CreateServerFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/home/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/layout/fragment_create_server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/layout/fragment_create_server.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/API.java" afterDir="false" />
     </list>
@@ -209,7 +207,7 @@
       <workItem from="1717931851776" duration="3855000" />
       <workItem from="1718014284341" duration="55000" />
       <workItem from="1718106298448" duration="370000" />
-      <workItem from="1718536144630" duration="4405000" />
+      <workItem from="1718536144630" duration="5831000" />
     </task>
     <servers />
   </component>

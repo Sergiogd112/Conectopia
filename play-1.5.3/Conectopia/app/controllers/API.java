@@ -171,7 +171,17 @@ public class API extends Controller {
         if (user == null) {
             renderJSON("{\"error\": \"Usuario no logueado\"}");
         }
-        Server newserver = new Server(serverName, serverDescription);
+        if (serverName == null || serverDescription == null) {
+            renderJSON("{\"error\": \"Nombre y descripción del servidor son requeridos\"}");
+        }
+        if (Server.find("byName", serverName).first() != null) {
+            renderJSON("{\"error\": \"Nombre de servidor ya existe\"}");
+        }
+        Server newserver = new Server();
+        newserver.name = serverName;
+        newserver.description = serverDescription;
+        newserver.save();
+
         Role role = new Role();
         role.name = "Owner";
         role.color = "magenta";
@@ -230,6 +240,7 @@ public class API extends Controller {
             messages.add(messageMap);
         }
         chat.put("messages", messages);
+
         renderJSON(chat);
     }
 

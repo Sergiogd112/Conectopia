@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.conectopia.conectopia.R;
 import com.conectopia.conectopia.data.model.LoggedInUser;
@@ -21,6 +22,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -112,16 +115,19 @@ public class CreateServerFragment extends Fragment {
                     conn.setConnectTimeout(15000 /* milliseconds */);
                     conn.setRequestMethod("POST");
                     conn.setDoInput(true);
-                    conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+                    conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
                     conn.setRequestProperty("Accept", "application/json");
                     Log.i("serverTest", "Token: " + LoggedInUser.getInstance().getPlayToken());
                     // add the cookie
                     conn.setRequestProperty("Cookie", LoggedInUser.getInstance().getPlayToken());
 
-                    // add the JSON object
-                    JSONObject jsonParam = new JSONObject();
-                    jsonParam.put("serverName", serverName);
-                    jsonParam.put("serverDescription", serverDescription);
+                    // add the form parameters
+                    String urlParameters = "serverName=" + URLEncoder.encode(serverName, "UTF-8") +
+                            "&serverDescription=" + URLEncoder.encode(serverDescription, "UTF-8");
+
+                    // write the form parameters to the connection
+                    conn.getOutputStream().write(urlParameters.getBytes("UTF-8"));
+                    conn.connect();
                     conn.connect();
                     stream = conn.getInputStream();
 
@@ -142,10 +148,34 @@ public class CreateServerFragment extends Fragment {
                     // EditText n = (EditText) findViewById (R.id.edit_message);
                     //n.setText(result);
                     Log.i("serverTest", "Result: " + result);
+                    JSONObject jsonObject = new JSONObject(result);
 
                     // get the list view from the root
                     handler.post(new Runnable() {
                         public void run() {
+                            // check if there is an error
+                            if (jsonObject.has("error")) {
+                                try {
+                                    Log.e("serverTest", "Error: " + jsonObject.getString("error"));
+                                } catch (Exception e) {
+                                    Log.e("serverTest", "Error: " + e.getMessage());
+                                    e.printStackTrace();
+                                }
+                            } else {
+                                // navigate to gallery
+                                Bundle bundle = new Bundle();
+                                try {
+                                    bundle.putString("serverId", jsonObject.getString("id"));
+                                    bundle.putString("serverName", serverName);
+                                    bundle.putString("serverDescription", serverDescription);
+                                    // Use the Navigation component to navigate to the gallery view
+                                    Navigation.findNavController(view).navigate(R.id.nav_gallery, bundle);
+                                } catch (Exception e) {
+                                    Log.e("serverTest", "Error: " + e.getMessage());
+                                    e.printStackTrace();
+                                }
+
+                            }
 
                         }
                     });
