@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="update profile por separado">
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="update profile corregido">
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Dashboard/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Dashboard/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Dashboard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,6 +208,7 @@
       <workItem from="1718014284341" duration="55000" />
       <workItem from="1718106298448" duration="370000" />
       <workItem from="1718536144630" duration="5831000" />
+      <workItem from="1718732684706" duration="1265000" />
     </task>
     <task id="LOCAL-00001" summary="intento database local Conectopia">
       <created>1718724161614</created>
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718731214420</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update profile corregido">
+      <created>1718732506572</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718732506572</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +262,8 @@
     <MESSAGE value="intento database local Conectopia" />
     <MESSAGE value="db.default=fs db" />
     <MESSAGE value="update profile por separado" />
-    <option name="LAST_COMMIT_MESSAGE" value="update profile por separado" />
+    <MESSAGE value="update profile corregido" />
+    <option name="LAST_COMMIT_MESSAGE" value="update profile corregido" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
