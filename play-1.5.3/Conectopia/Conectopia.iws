@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
-      <change afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/slideshow/MessageAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/res/layout/message_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/gallery/ChatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Conectopia/app/src/main/java/com/conectopia/conectopia/ui/gallery/ChatAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conectopia.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +164,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Play App.Conectopia" />
+      <item itemvalue="Play 2 App.Conectopia" />
       <item itemvalue="Shell Script.Run bryan" />
       <item itemvalue="Shell Script.Run Windows" />
       <item itemvalue="Shell Script.Test" />
@@ -208,7 +207,7 @@
       <workItem from="1717931851776" duration="3855000" />
       <workItem from="1718014284341" duration="55000" />
       <workItem from="1718106298448" duration="370000" />
-      <workItem from="1718536144630" duration="8437000" />
+      <workItem from="1718536144630" duration="5831000" />
     </task>
     <servers />
   </component>
