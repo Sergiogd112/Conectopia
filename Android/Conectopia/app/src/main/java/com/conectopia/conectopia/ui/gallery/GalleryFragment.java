@@ -6,12 +6,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import com.conectopia.conectopia.R;
 import com.conectopia.conectopia.databinding.FragmentGalleryBinding;
@@ -60,7 +62,17 @@ public class GalleryFragment extends Fragment {
         adapter = new ChatAdapter(getContext(), chats);
         listView.setAdapter(adapter);
 
+        Button createChatButton = root.findViewById(R.id.createChatButton);
+        createChatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("serverId", serverId);
+                Navigation.findNavController(v).navigate(R.id.createChatFragment, bundle);
+            }
+        });
         // Configura el TextView para observar cambios en el ViewModel
+
 
         connectChatGET(root);
 

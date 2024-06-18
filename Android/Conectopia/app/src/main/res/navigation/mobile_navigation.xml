@@ -32,4 +32,9 @@
         android:name="com.conectopia.conectopia.ui.createServer.CreateServerFragment"
         android:label="Create Server"
         tools:layout="@layout/fragment_create_server"/>
+    <fragment
+        android:id="@+id/createChatFragment"
+        android:name="com.conectopia.conectopia.ui.createChat.CreateChatFragment"
+        android:label="Create Chat"
+        tools:layout="@layout/fragment_create_chat"/>
 </navigation>

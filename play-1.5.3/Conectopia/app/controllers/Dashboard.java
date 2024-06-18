@@ -285,12 +285,15 @@ public class Dashboard extends Application {
         User user = connected();
         if (user != null) {
             if (newUsername != null && newUsername.equals(confirmNewUsername)) {
+                System.out.println("newUsername: " + newUsername);
                 user.username = newUsername;
             }
             if (newEmail != null && newEmail.equals(confirmNewEmail)) {
+                System.out.println("newEmail: " + newEmail);
                 user.email = newEmail;
             }
             if (newPassword != null && newPassword.equals(confirmNewPassword)) {
+                System.out.println("newPassword: " + newPassword);
                 user.password = newPassword; // Asegúrate de encriptar la contraseña antes de guardarla
             }
             user.save();
