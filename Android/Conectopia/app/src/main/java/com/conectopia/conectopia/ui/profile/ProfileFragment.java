@@ -10,6 +10,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.NavHost;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.conectopia.conectopia.R;
 import com.conectopia.conectopia.data.model.LoggedInUser;
@@ -78,7 +82,6 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        this.serverId = getArguments().getString("serverId");
 
         // on click listener for the button createServerButton
         // this will call the connectCreateServer method
@@ -350,6 +353,18 @@ public class ProfileFragment extends Fragment {
     }
 
     public void connectProfileGET(View view) {
+        if (view == null) {
+            return;
+        }
+if (LoggedInUser.getInstance().getPlayToken().equals("")) {
+    NavHostFragment navHostFragment = (NavHostFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main);
+    if (navHostFragment != null) {
+        NavController navController = navHostFragment.getNavController();
+        navController.navigate(R.id.nav_login);
+    } else {
+        Log.e("ProfileFragment", "NavHostFragment is null");
+    }
+}
         new Thread(new Runnable() {
             InputStream stream = null;
             String str = "";
@@ -394,6 +409,7 @@ public class ProfileFragment extends Fragment {
                                     Log.e("serverTest", "Error: " + e.getMessage());
                                     e.printStackTrace();
                                 }
+                                Navigation.findNavController(view).navigate(R.id.nav_login);
                             } else {
                                 try {
                                     userNameView.setText(jsonObject.getString("username"));

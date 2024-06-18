@@ -191,6 +191,10 @@ GET    /api/register                            Api.register
 
 GET    /api/logout                              Api.logout
 
+GET    /api/user                                Api.user
+
+POST   /api/user                                Api.updateUser
+
 
 # Catch all
 #*       /{controller}/{action}                  {controller}.{action}

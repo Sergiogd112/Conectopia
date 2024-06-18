@@ -50,7 +50,7 @@ public class API extends Controller {
         List<Map<String, String>> servers = new ArrayList<>();
 
         List<Server> tempservers;
-        if (user!=null){
+        if (user != null) {
             System.out.println("User: " + user.username);
             // get the servers where the user is a member
             List<Member> members = Member.find("byUser", user).fetch();
@@ -278,6 +278,74 @@ public class API extends Controller {
         chat_res.messages.add(message);
         chat_res.save();
         chat(chat_res.id);
+    }
+
+    public static void user() {
+        User user = connected();
+        if (user == null) {
+            renderJSON("{\"error\": \"Usuario no logueado\"}");
+        }
+        /*
+        Generate a json with this format:
+        {
+            "username": "User_Username",
+            "email": "User_Email",
+            "servers": [
+                {
+                    "name": "Server_Name",
+                    "description": "Server_Description",
+                    "id": "Server_ID"
+                }
+            ]
+        }
+        */
+        Map<String, Object> userMap = new HashMap<>();
+        userMap.put("username", user.username);
+        userMap.put("email", user.email);
+        List<Map<String, Object>> servers = new ArrayList<>();
+        for (Member member : user.members) {
+            Map<String, Object> serverMap = new HashMap<>();
+            serverMap.put("name", member.server.name);
+            serverMap.put("description", member.server.description);
+            serverMap.put("id", member.server.id);
+            servers.add(serverMap);
+        }
+        userMap.put("servers", servers);
+        renderJSON(userMap);
+    }
+
+    public static void updateUsers(String newUsername, String confirmNewUsername,
+                                   String newEmail, String confirmNewEmail,
+                                   String oldPassword, String newPassword, String confirmNewPassword) {
+        User user = connected();
+        if (user == null) {
+            renderJSON("{\"error\": \"Usuario no logueado\"}");
+        }
+        if (newUsername != null && confirmNewUsername != null) {
+            if (!newUsername.equals(confirmNewUsername)) {
+                renderJSON("{\"error\": \"Los nuevos nombres de usuario no coinciden\"}");
+            }
+            user.username = newUsername;
+            user.save();
+        }
+        if (newEmail != null && confirmNewEmail != null) {
+            if (!newEmail.equals(confirmNewEmail)) {
+                renderJSON("{\"error\": \"Los nuevos correos no coinciden\"}");
+            }
+            user.email = newEmail;
+            user.save();
+        }
+        if (oldPassword != null && newPassword != null && confirmNewPassword != null) {
+            if (!newPassword.equals(confirmNewPassword)) {
+                renderJSON("{\"error\": \"Las nuevas contraseñas no coinciden\"}");
+            }
+            if (!user.password.equals(oldPassword)) {
+                renderJSON("{\"error\": \"Contraseña incorrecta\"}");
+            }
+            user.password = newPassword;
+            user.save();
+        }
+        renderText("{\"success\": \"Usuario actualizado\"}");
     }
 
 }

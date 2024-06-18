@@ -65,7 +65,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (LoggedInUser.getInstance().getPlayToken().equals("")) {
-                    Navigation.findNavController(v).navigate(R.id.nav_profile);
+                    Navigation.findNavController(v).navigate(R.id.nav_login);
                     return;
                 }
                 Navigation.findNavController(v).navigate(R.id.createServerFragment);
