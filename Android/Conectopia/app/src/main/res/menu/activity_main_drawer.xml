@@ -18,8 +18,8 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
         <item
-            android:id="@+id/nav_login"
-            android:icon="@drawable/baseline_login_24"
-            android:title="@string/menu_login" />
+            android:id="@+id/nav_profile"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/menu_profile" />
     </group>
 </menu>
