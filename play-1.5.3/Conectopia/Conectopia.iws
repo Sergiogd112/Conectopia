@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="Home conectopia acabado">
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="redirigir pagina logo navbar">
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Application/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +20,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Class" />
         <option value="SCSS File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -168,7 +168,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Play App.Conectopia" />
+      <item itemvalue="Play 2 App.Conectopia" />
       <item itemvalue="Shell Script.Run bryan" />
       <item itemvalue="Shell Script.Run Windows" />
       <item itemvalue="Shell Script.Test" />
@@ -212,7 +212,7 @@
       <workItem from="1718014284341" duration="55000" />
       <workItem from="1718106298448" duration="370000" />
       <workItem from="1718536144630" duration="5831000" />
-      <workItem from="1718732684706" duration="4331000" />
+      <workItem from="1718732684706" duration="5768000" />
     </task>
     <task id="LOCAL-00001" summary="intento database local Conectopia">
       <created>1718724161614</created>
@@ -249,7 +249,28 @@
       <option name="project" value="LOCAL" />
       <updated>1718734265101</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="styles home e index agregados">
+      <created>1718737141175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718737141175</updated>
+    </task>
+    <task id="LOCAL-00007" summary="styles home e index agregados">
+      <created>1718737178330</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718737178330</updated>
+    </task>
+    <task id="LOCAL-00008" summary="redirigir pagina logo navbar">
+      <created>1718737469811</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718737469811</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +296,9 @@
     <MESSAGE value="update profile por separado" />
     <MESSAGE value="update profile corregido" />
     <MESSAGE value="Home conectopia acabado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home conectopia acabado" />
+    <MESSAGE value="styles home e index agregados" />
+    <MESSAGE value="redirigir pagina logo navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="redirigir pagina logo navbar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

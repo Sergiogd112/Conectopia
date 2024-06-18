@@ -11,3 +11,28 @@
 <p>
     The source code for this application can be found on <a href="http://github.com/Sergiogd112/Conectopia">GitHub</a>.
 </p>
+
+<div id="contributors" style="display: flex; justify-content: space-around;"></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var contributors = ['Sergiogd112', 'Bryan834'];
+
+        contributors.forEach(function(contributor) {
+            $.get('https://api.github.com/users/' + contributor, function(data) {
+                var profileImage = data.avatar_url;
+                var username = data.login;
+
+                var profileHTML = '<div class="contributor-profile">';
+                profileHTML += '<img src="' + profileImage + '" alt="' + username + '">';
+                profileHTML += '<p>' + username + '</p>';
+                profileHTML += '</div>';
+
+                $('#contributors').append(profileHTML);
+            });
+        });
+    });
+</script>
+</body>
+</html>
