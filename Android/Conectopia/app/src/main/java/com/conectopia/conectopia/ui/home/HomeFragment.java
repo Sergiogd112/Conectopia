@@ -78,6 +78,13 @@ public class HomeFragment extends Fragment {
 
         return root;
     }
+    @Override
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        if (LoggedInUser.getInstance().getPlayToken().equals("")) {
+            Navigation.findNavController(view).navigate(R.id.nav_login);
+        }
+    }
 
     @Override
     public void onDestroyView() {
