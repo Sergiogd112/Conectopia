@@ -215,7 +215,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
   </component>
-  <component name="dataSourceStorageLocal" created-in="IU-222.4167.29">
+  <component name="dataSourceStorageLocal" created-in="IU-241.14494.240">
     <data-source name="play" uuid="c14dd7cc-4f67-4db3-bed1-4839718331a7">
       <database-info product="H2" version="2.2.220 (2023-07-04)" jdbc-version="4.2" driver-name="H2 JDBC Driver" driver-version="2.2.220 (2023-07-04)" dbms="H2" exact-version="2.2.220" exact-driver-version="2.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
@@ -265,6 +265,8 @@
     </data-source>
     <data-source name="play [3]" uuid="b3dcd24b-56b1-4c68-8090-4d99fb501cd9">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="H2" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <auth-provider>no-auth</auth-provider>
       <schema-mapping />
     </data-source>
   </component>
