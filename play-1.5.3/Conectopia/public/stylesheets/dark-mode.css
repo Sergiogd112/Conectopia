@@ -24,3 +24,6 @@
 [data-theme="dark"] .bg-white {
   background-color: #000 !important;
 }
+#welcomeMessage {
+  color: white;
+}
