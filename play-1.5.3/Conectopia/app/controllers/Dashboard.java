@@ -300,5 +300,45 @@ public class Dashboard extends Application {
             index(); // Redirige al usuario a la página de inicio después de actualizar el perfil
         }
     }
+    //haz update nombre
+    public static void updateName(String newName, String confirmNewName) {
+        System.out.println("newName: " + newName );
+        User user = connected();
+        if (user != null) {
+            if (newName != null && newName.equals(confirmNewName)) {
+                System.out.println("newName: " + newName);
+                user.username = newName;
+            }
+            user.save();
+            index(); // Redirige al usuario a la página de inicio después de actualizar el perfil
+        }
+    }
+    // Actualizar correo electrónico
+    public static void updateEmail(String newEmail, String confirmNewEmail) {
+        System.out.println("newEmail: " + newEmail );
+        User user = connected();
+        if (user != null) {
+            if (newEmail != null && newEmail.equals(confirmNewEmail)) {
+                System.out.println("newEmail: " + newEmail);
+                user.email = newEmail;
+            }
+            user.save();
+            index(); // Redirige al usuario a la página de inicio después de actualizar el perfil
+        }
+    }
+
+    // Actualizar contraseña
+    public static void updatePassword(String newPassword, String confirmNewPassword) {
+        System.out.println("newPassword: " + newPassword);
+        User user = connected();
+        if (user != null) {
+            if (newPassword != null && newPassword.equals(confirmNewPassword)) {
+                System.out.println("newPassword: " + newPassword);
+                user.password = newPassword; // Asegúrate de encriptar la contraseña antes de guardarla
+            }
+            user.save();
+            index(); // Redirige al usuario a la página de inicio después de actualizar el perfil
+        }
+    }
 
 }

@@ -26,37 +26,38 @@
     </div>
 
     <!-- Formulario para modificar el nombre de usuario -->
-    <form action="/dashboard/profile" method="post">
+    <form action="/dashboard/profile/name" method="post">
         <div class="mb-3">
             <label for="newUsername" class="form-label">Nuevo nombre de usuario</label>
-            <input type="text" class="form-control" id="newUsername" placeholder="Introduce tu nuevo nombre de usuario">
+            <input type="text" name="newName" class="form-control" id="newUsername" placeholder="Introduce tu nuevo nombre de usuario">
         </div>
         <div class="mb-3">
-            <input type="text" class="form-control" id="confirmNewUsername" placeholder="Confirma tu nuevo nombre de usuario">
+            <input type="text" name="confirmNewName" class="form-control" id="confirmNewUsername" placeholder="Confirma tu nuevo nombre de usuario">
         </div>
         <button type="submit" class="btn btn-primary">Guardar Cambios de Usuario</button>
     </form>
 
+
     <!-- Formulario para modificar el correo electrónico -->
-    <form action="/dashboard/profile" method="post">
+    <form action="/dashboard/profile/email" method="post">
         <div class="mb-3">
             <label for="newEmail" class="form-label">Nuevo correo electrónico</label>
-            <input type="email" class="form-control" id="newEmail" placeholder="Introduce tu nuevo correo electrónico">
+            <input type="email" name="newEmail" class="form-control" id="newEmail" placeholder="Introduce tu nuevo correo electrónico">
         </div>
         <div class="mb-3">
-            <input type="email" class="form-control" id="confirmNewEmail" placeholder="Confirma tu nuevo correo electrónico">
+            <input type="email" name="confirmNewEmail" class="form-control" id="confirmNewEmail" placeholder="Confirma tu nuevo correo electrónico">
         </div>
         <button type="submit" class="btn btn-primary">Guardar Cambios de Correo</button>
     </form>
 
     <!-- Formulario para modificar la contraseña -->
-    <form action="/dashboard/profile" method="post">
+    <form action="/dashboard/profile/password" method="post">
         <div class="mb-3">
             <label for="newPassword" class="form-label">Nueva contraseña</label>
-            <input type="password" class="form-control" id="newPassword" placeholder="Introduce tu nueva contraseña">
+            <input type="password"  name="newPassword" class="form-control" id="newPassword" placeholder="Introduce tu nueva contraseña">
         </div>
         <div class="mb-3">
-            <input type="password" class="form-control" id="confirmNewPassword" placeholder="Confirma tu nueva contraseña">
+            <input type="password"  name="confirmNewPassword" class="form-control" id="confirmNewPassword" placeholder="Confirma tu nueva contraseña">
         </div>
         <button type="submit" class="btn btn-primary">Guardar Cambios de Contraseña</button>
     </form>

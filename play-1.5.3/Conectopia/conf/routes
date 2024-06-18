@@ -161,6 +161,10 @@ GET     /dashboard/profile                      Dashboard.profile
 
 POST    /dashboard/profile                       Dashboard.updateProfile
 
+POST     /dashboard/profile/name                  Dashboard.updateName
+POST     /dashboard/profile/email                  Dashboard.updateEmail
+POST     /dashboard/profile/password                  Dashboard.updatePassword
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
