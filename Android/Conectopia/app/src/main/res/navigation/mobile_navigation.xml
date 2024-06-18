@@ -23,7 +23,7 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/nav_login"
+        android:id="@+id/nav_profile"
         android:name="com.conectopia.conectopia.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
@@ -37,4 +37,9 @@
         android:name="com.conectopia.conectopia.ui.createChat.CreateChatFragment"
         android:label="Create Chat"
         tools:layout="@layout/fragment_create_chat"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.conectopia.conectopia.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
 </navigation>
