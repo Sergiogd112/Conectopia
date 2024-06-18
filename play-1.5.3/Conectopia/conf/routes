@@ -159,7 +159,7 @@ GET     /dashboard/badge/{idbadge}              Dashboard.badge
 
 GET     /dashboard/profile                      Dashboard.profile
 
-PUT    /dashboard/profile                       Dashboard.updateProfile
+POST    /dashboard/profile                       Dashboard.updateProfile
 
 
 # Ignore favicon requests

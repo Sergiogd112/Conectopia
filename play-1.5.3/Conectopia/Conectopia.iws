@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="intento database local Conectopia">
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="db.default=fs db">
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Dashboard/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Dashboard/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718724161614</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="db.default=fs db">
+      <created>1718724473509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718724473510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +245,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="intento database local Conectopia" />
-    <option name="LAST_COMMIT_MESSAGE" value="intento database local Conectopia" />
+    <MESSAGE value="db.default=fs db" />
+    <option name="LAST_COMMIT_MESSAGE" value="db.default=fs db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
