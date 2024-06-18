@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="Home conectopia acabado">
-      <change afterPath="$PROJECT_DIR$/public/images/Luminous Trails@1x-100.0s-1366px-1236px.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Dashboard/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/dark-mode.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/dark-mode.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="styles home e index agregados">
+      <change beforePath="$PROJECT_DIR$/app/views/Application/tags/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/tags/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +210,7 @@
       <workItem from="1718014284341" duration="55000" />
       <workItem from="1718106298448" duration="370000" />
       <workItem from="1718536144630" duration="5831000" />
-      <workItem from="1718732684706" duration="4331000" />
+      <workItem from="1718732684706" duration="4667000" />
     </task>
     <task id="LOCAL-00001" summary="intento database local Conectopia">
       <created>1718724161614</created>
@@ -252,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718734265101</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="styles home e index agregados">
+      <created>1718737141175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718737141175</updated>
+    </task>
+    <task id="LOCAL-00007" summary="styles home e index agregados">
+      <created>1718737178330</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718737178330</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +287,8 @@
     <MESSAGE value="update profile por separado" />
     <MESSAGE value="update profile corregido" />
     <MESSAGE value="Home conectopia acabado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home conectopia acabado" />
+    <MESSAGE value="styles home e index agregados" />
+    <option name="LAST_COMMIT_MESSAGE" value="styles home e index agregados" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
