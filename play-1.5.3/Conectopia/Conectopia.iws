@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="profile.html y Dashboard.java (update profile)">
-      <change afterPath="$PROJECT_DIR$/app/helpers/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conectopia.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.ipr" afterDir="false" />
+    <list default="true" id="b53a19ab-3fac-481a-ad29-da2cf54d8c8b" name="Changes" comment="db.default=fs db">
       <change beforePath="$PROJECT_DIR$/Conectopia.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Conectopia.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/Dashboard/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Dashboard/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <recent name="C:\Users\Sergio Gomez Damas\Documents\GitHub\Conectopia\play-1.5.3\Conectopia\app\views\tags" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Run Windows">
+  <component name="RunManager" selected="Shell Script.Run bryan">
     <configuration name="Conectopia" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Conectopia" />
       <option name="allowRunningInParallel" value="false" />
@@ -209,6 +209,21 @@
       <workItem from="1718106298448" duration="370000" />
       <workItem from="1718536144630" duration="5831000" />
     </task>
+    <task id="LOCAL-00001" summary="intento database local Conectopia">
+      <created>1718724161614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718724161614</updated>
+    </task>
+    <task id="LOCAL-00002" summary="db.default=fs db">
+      <created>1718724473509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718724473510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +242,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="intento database local Conectopia" />
+    <MESSAGE value="db.default=fs db" />
+    <option name="LAST_COMMIT_MESSAGE" value="db.default=fs db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
