@@ -121,10 +121,23 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        connectProfileGET(root);
 
         // Inflate the layout for this fragment
         return root;
+    }
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        if (LoggedInUser.getInstance().getPlayToken().equals("")) {
+            NavHostFragment navHostFragment = (NavHostFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main);
+            if (navHostFragment != null) {
+                NavController navController = navHostFragment.getNavController();
+                navController.navigate(R.id.nav_login);
+            } else {
+                Log.e("ProfileFragment", "NavHostFragment is null");
+            }
+        }
+        connectProfileGET(view);
     }
 
     public void changeUserName(View view) {
@@ -187,7 +200,7 @@ public class ProfileFragment extends Fragment {
                                     e.printStackTrace();
                                 }
                             } else {
-                                connectProfileGET(view);
+                                Navigation.findNavController(view).navigate(R.id.nav_login);
                             }
 
                         }
@@ -262,7 +275,7 @@ public class ProfileFragment extends Fragment {
                                     e.printStackTrace();
                                 }
                             } else {
-                                connectProfileGET(view);
+                                Navigation.findNavController(view).navigate(R.id.nav_login);
                             }
 
                         }
@@ -338,7 +351,7 @@ public class ProfileFragment extends Fragment {
                                     e.printStackTrace();
                                 }
                             } else {
-                                connectProfileGET(view);
+                                Navigation.findNavController(view).navigate(R.id.nav_login);
                             }
 
                         }
@@ -409,7 +422,7 @@ if (LoggedInUser.getInstance().getPlayToken().equals("")) {
                                     Log.e("serverTest", "Error: " + e.getMessage());
                                     e.printStackTrace();
                                 }
-                                Navigation.findNavController(view).navigate(R.id.nav_login);
+//                                Navigation.findNavController(view).navigate(R.id.nav_login);
                             } else {
                                 try {
                                     userNameView.setText(jsonObject.getString("username"));

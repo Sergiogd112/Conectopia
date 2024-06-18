@@ -38,8 +38,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:hint="New name"
                     android:inputType="text"
-                    android:text="New name"
                     app:layout_constraintBottom_toTopOf="@+id/confirmNewUsernameInput"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -49,8 +49,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:hint="Confirnm new name"
                     android:inputType="text"
-                    android:text="Confirnm new name"
                     app:layout_constraintBottom_toTopOf="@+id/changeUsernameButton"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -95,8 +95,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:hint="New Email"
                     android:inputType="text"
-                    android:text="Name"
                     app:layout_constraintBottom_toTopOf="@+id/confirmNewEmailInput"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -106,8 +106,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:hint="Confrim new Email"
                     android:inputType="text"
-                    android:text="Name"
                     app:layout_constraintBottom_toTopOf="@+id/changeEmailButton"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />

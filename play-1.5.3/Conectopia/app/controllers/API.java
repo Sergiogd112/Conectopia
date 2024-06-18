@@ -314,7 +314,7 @@ public class API extends Controller {
         renderJSON(userMap);
     }
 
-    public static void updateUsers(String newUsername, String confirmNewUsername,
+    public static void updateUser(String newUsername, String confirmNewUsername,
                                    String newEmail, String confirmNewEmail,
                                    String oldPassword, String newPassword, String confirmNewPassword) {
         User user = connected();
