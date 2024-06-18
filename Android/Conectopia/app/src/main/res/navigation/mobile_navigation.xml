@@ -30,5 +30,6 @@
     <fragment
         android:id="@+id/createServerFragment"
         android:name="com.conectopia.conectopia.ui.createServer.CreateServerFragment"
-        android:label="Create Server" />
+        android:label="Create Server"
+        tools:layout="@layout/fragment_create_server"/>
 </navigation>

@@ -38,17 +38,17 @@ public class ChatAdapter extends ArrayAdapter<JSONObject> {
         try {
             serverName.setText(server.getString("name"));
             serverDescription.setText(server.getString("description"));
-            final String serverId = server.getString("id");
+            final String chatId = server.getString("id");
 
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     // Create a bundle to hold the server id
                     Bundle bundle = new Bundle();
-                    bundle.putString("serverId", serverId);
+                    bundle.putString("chatId", chatId);
 
                     // Use the Navigation component to navigate to the gallery view
-                    Navigation.findNavController(v).navigate(R.id.nav_gallery, bundle);
+                    Navigation.findNavController(v).navigate(R.id.nav_slideshow, bundle);
                 }
             });
         } catch (Exception e) {
