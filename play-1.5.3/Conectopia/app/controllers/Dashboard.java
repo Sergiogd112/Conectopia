@@ -341,4 +341,12 @@ public class Dashboard extends Application {
         }
     }
 
+    public static void deleteUser() {
+        User user = connected();
+        if (user != null) {
+            user.delete();
+            Application.index(); // Redirige al usuario a la página de inicio después de eliminar la cuenta
+        }
+    }
+
 }
